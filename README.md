@@ -1,24 +1,25 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# frontend-test-2
+Team test for frontend interns 
 
-Things you may want to cover:
+### Test to learn HTML,CSS and Jquery 
 
-* Ruby version
+We need to convert a Template to a working website. We may use Rails or anyother framework as backend. 
+We will have forms, validations, sliders. 
 
-* System dependencies
+#### We should use 
+- SSH 
+- HAML
+- SASS
+- Javascript plugins   
 
-* Configuration
 
-* Database creation
+#### How this work
 
-* Database initialization
+- Clone this repository. 
+- Divide your task to small piece/task and assigne.
+- Familier with `conflicts`, `merge`, `rebase`, `stash`, `stash apply`
+- Once it complete, create a `Release`
+- We will use Heroku as `staging` and `production`
+- Master is your complete main branch, Production is your current stable, Staging used to show progress 
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
