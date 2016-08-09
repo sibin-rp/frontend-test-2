@@ -11,7 +11,7 @@ We will have forms, validations, sliders.
 - HAML
 - SASS
 - Javascript plugins   
-- 
+
 
 #### How this work
 
