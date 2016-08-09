@@ -40,3 +40,15 @@ bower.json
 
 # Ignore Byebug command history file.
 .byebug_history
+
+# Ignore npm 
+node_modules
+./**/node_modules 
+
+# Webstorm/PHPStorm/RubyMine 
+.idea 
+
+# Middleman build 
+./build 
+
+
