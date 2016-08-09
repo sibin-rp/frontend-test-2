@@ -11,12 +11,10 @@ default: &default
 
 
 development:
-  # <<: *default
-  # username: postgres
-  # password: 
-  # database: f_development
-  url: <%= ENV['DATABASE_URL'] %>
-
+  <<: *default
+  username: postgres
+  password: 
+  database: f_development
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -28,4 +26,9 @@ test:
   database: f_test
 
 production:
+  # <<: *default
+  # username: postgres 
+  # password:
+  # database: 'f_production'
   url: <%= ENV['DATABASE_URL'] %>
+
