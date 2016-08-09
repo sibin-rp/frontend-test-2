@@ -17,18 +17,23 @@ We will have forms, validations, sliders.
 - Install ruby 2.3.1 , then install rails gem `gem install rails`.
 - Download [Postgres](http://www.enterprisedb.com/products-services-training/pgdownload#windows)
 - Goto Postgres directory `C:\Program Files\PostgreSQL\9.5\data` and find `pg_hba.conf` file 
+change to `trust`.
 ```
-``# TYPE  DATABASE        USER            ADDRESS                 METHOD``
+# TYPE  DATABASE        USER            ADDRESS                 METHOD
 
-``# IPv4 local connections:``
+# IPv4 local connections:
 host    all             all             127.0.0.1/32            trust
-``# IPv6 local connections:``
+# IPv6 local connections:
 host    all             all             ::1/128                 trust
-``# Allow replication connections from localhost, by a user with the``
-``# replication privilege.``
-``#host    replication     postgres        127.0.0.1/32            trust``
-``#host    replication     postgres        ::1/128                 trust``
+# Allow replication connections from localhost, by a user with the
+# replication privilege.
+#host    replication     postgres        127.0.0.1/32            trust
+#host    replication     postgres        ::1/128                 trust
 ```
+- Run `bundle install`, if there is any errors, specify `pg_conf` path on windows
+enviroment varaible, then restart computer and run again.
+- Create databse using `rake db:create` or `bundle exec rake db:create`.
+- Run project with `rails s` command.
 
 #### We should use 
 - SSH 
