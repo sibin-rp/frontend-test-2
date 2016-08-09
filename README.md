@@ -7,6 +7,29 @@ Team test for frontend interns
 We need to convert a Template to a working website. We may use Rails or anyother framework as backend. 
 We will have forms, validations, sliders. 
 
+### Installation 
+
+- Require `ruby 2.3.1`
+- Postgres 
+
+##### Installtion on Windows 
+
+- Install ruby 2.3.1 , then install rails gem `gem install rails`.
+- Download [Postgres](http://www.enterprisedb.com/products-services-training/pgdownload#windows)
+- Goto Postgres directory `C:\Program Files\PostgreSQL\9.5\data` and find `pg_hba.conf` file 
+```
+``# TYPE  DATABASE        USER            ADDRESS                 METHOD``
+
+``# IPv4 local connections:``
+host    all             all             127.0.0.1/32            trust
+``# IPv6 local connections:``
+host    all             all             ::1/128                 trust
+``# Allow replication connections from localhost, by a user with the``
+``# replication privilege.``
+``#host    replication     postgres        127.0.0.1/32            trust``
+``#host    replication     postgres        ::1/128                 trust``
+```
+
 #### We should use 
 - SSH 
 - HAML
