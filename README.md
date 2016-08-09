@@ -1,5 +1,5 @@
 # frontend-test-2
-Team test for fronted interns 
+Team test for frontend interns 
 
 ### Test to learn HTML,CSS and Jquery 
 
