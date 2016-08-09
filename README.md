@@ -16,7 +16,7 @@ We will have forms, validations, sliders.
 #### How this work
 
 - Clone this repository. 
-- Divide your task to small piece/task and assigned.
+- Divide your task to small piece/task and assigne.
 - Familier with `conflicts`, `merge`, `rebase`, `stash`, `stash apply`
 - Once it complete, create a `Release`
 - We will use Heroku as `staging` and `production`
