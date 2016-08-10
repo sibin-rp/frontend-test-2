@@ -16,8 +16,8 @@ We will have forms, validations, sliders.
 
 - Install ruby 2.3.1 , then install rails gem `gem install rails`.
 - Download [Postgres](http://www.enterprisedb.com/products-services-training/pgdownload#windows)
-- Goto Postgres directory `C:\Program Files\PostgreSQL\9.5\data` and find `pg_hba.conf` file 
-change to `trust`.
+- Goto Postgres directory `C:\Program Files\PostgreSQL\9.5\data` and find `pg_hba.conf` file. 
+Change everything under `METHOD` to `trust`, you don't need to specify password on rails project.
 ```
 # TYPE  DATABASE        USER            ADDRESS                 METHOD
 
