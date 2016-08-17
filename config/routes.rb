@@ -15,5 +15,13 @@ Rails.application.routes.draw do
 
   get 'home/contact'
 
+  get 'home/get_ajax'
+
+  post 'home/post_ajax'
+
+  put 'home/put_ajax/:id', to:'home#put_ajax', as:'home_put_ajax'
+
+  delete 'home/del_ajax'
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
