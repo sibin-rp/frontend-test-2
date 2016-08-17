@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'dashboard/index'
+
+  get 'dashboard/documentation'
+
   devise_for :users
   resources :teams
   resources :posts

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FrontendTest2</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'dashboard/dashboard.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'dashboard/dashboard.js', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
