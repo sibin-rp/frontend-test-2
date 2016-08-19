@@ -15,6 +15,16 @@ Rails.application.routes.draw do
 
   get 'home/contact'
 
+  get 'home/service'
+
+  get 'home/blog'
+
+  get 'home/blog/:id/show', to:'home#blog_index'
+
+  get 'home/teams'
+
+  get 'home/team/:id/show', to:'home#team_index'
+
   get 'home/get_ajax'
 
   post 'home/post_ajax'
