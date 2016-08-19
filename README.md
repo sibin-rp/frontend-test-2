@@ -52,3 +52,6 @@ enviroment varaible, then restart computer and run again.
 - We will use Heroku as `staging` and `production`
 - Master is your complete main branch, Production is your current stable, Staging used to show progress 
 
+- Install Postgresql 9.5, run `rake db:create` , then `rake db:migrate`, prefix `bundle exec` if there any errors
+- Run `rails s`  <--port --base >, port and base are optional 
+   
