@@ -10,9 +10,10 @@ We will have forms, validations, sliders.
 ### Installation 
 
 - Require `ruby 2.3.1`
-- Postgres 
+- Postgres 9.5
+- Rails 5 
 
-##### Installtion on Windows 
+##### Installation on Windows 
 
 - Install ruby 2.3.1 , then install rails gem `gem install rails`.
 - Download [Postgres](http://www.enterprisedb.com/products-services-training/pgdownload#windows)
