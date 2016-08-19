@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160817102548) do
+ActiveRecord::Schema.define(version: 20160819100610) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,8 +20,12 @@ ActiveRecord::Schema.define(version: 20160817102548) do
     t.text     "content"
     t.boolean  "publish"
     t.integer  "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
+    t.string   "cover_photos_file_name"
+    t.string   "cover_photos_content_type"
+    t.integer  "cover_photos_file_size"
+    t.datetime "cover_photos_updated_at"
   end
 
   create_table "teams", force: :cascade do |t|
