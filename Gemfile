@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+ruby "2.3.1"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0'
@@ -52,4 +53,9 @@ gem 'foundation-rails'
 gem "font-awesome-rails"
 
 gem 'devise'
+gem 'simple_form'
 gem "paperclip", "~> 5.0.0"
+
+gem 'metamagic'
+gem 'will_paginate', '~> 3.1.0'
+gem 'faker', '~> 1.6', '>= 1.6.6'
