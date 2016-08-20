@@ -53,6 +53,7 @@ gem 'foundation-rails'
 gem "font-awesome-rails"
 
 gem 'devise'
+gem 'simple_form'
 gem "paperclip", "~> 5.0.0"
 
 gem 'metamagic'
