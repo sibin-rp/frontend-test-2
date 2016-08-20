@@ -39,7 +39,7 @@ group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console'
   gem 'meta_request'
-
+  gem "better_errors"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -53,6 +53,3 @@ gem "font-awesome-rails"
 
 gem 'devise'
 gem "paperclip", "~> 5.0.0"
-
-
-
