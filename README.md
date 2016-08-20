@@ -19,6 +19,8 @@ We will have forms, validations, sliders.
 - Download [Postgres](http://www.enterprisedb.com/products-services-training/pgdownload#windows)
 - Goto Postgres directory `C:\Program Files\PostgreSQL\9.5\data` and find `pg_hba.conf` file.
 Change everything under `METHOD` to `trust`, you don't need to specify password on rails project.
+
+
 ```
 # TYPE  DATABASE        USER            ADDRESS                 METHOD
 
