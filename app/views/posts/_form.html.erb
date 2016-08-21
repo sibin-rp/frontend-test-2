@@ -1,17 +1,41 @@
-<%= form_for(post) do |f| %>
-  <% if post.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
 
-      <ul>
-      <% post.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
+      <%= form_for(post, multipart:true)do |f| %>
+        <% if post.errors.any? %>
+          <div id="error_explanation">
+            <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
+
+            <ul>
+            <% post.errors.full_messages.each do |message| %>
+              <li><%= message %></li>
+            <% end %>
+            </ul>
+          </div>
+        <% end %>
+        <div class="row">
+            <div class="small-12 columns">
+              <%= f.label :title %>
+              <%= f.text_field :title , placeholder:"Enter Post title" %>
+            </div>
+        </div>
+        <div class="row">
+          <div class="small-12 columns">
+            <%= f.label :content %>
+            <%= f.text_area :content , rows: "5", placeholder:"Post content" %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-12 columns">
+            <%= f.label :publish %>
+            <%= f.check_box :publish %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-12 columns">
+            <%= f.label :cover_photos %>
+            <%= f.file_field :cover_photos %>
+          </div>
+        </div>
+        <div class="actions">
+          <%= f.submit class:'button' %>
+        </div>
       <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>

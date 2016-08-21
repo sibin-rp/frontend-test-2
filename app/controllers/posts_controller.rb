@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+  layout "dashboard"
   before_action :set_post, only: [:show, :edit, :update, :destroy]
 
   # GET /posts
@@ -24,7 +25,7 @@ class PostsController < ApplicationController
   # POST /posts
   # POST /posts.json
   def create
-    @post = Post.new(post_params)
+    @post = Post.new(post_params.merge(user_id:1))
 
     respond_to do |format|
       if @post.save
@@ -69,6 +70,6 @@ class PostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      params.fetch(:post, {})
+      params.require(:post).permit(:title,:content,:user_id,:publish,:cover_photos)
     end
 end
