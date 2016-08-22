@@ -20,6 +20,8 @@ Rails.application.routes.draw do
 
   get 'home/about'
 
+  get 'home/price'
+
   get 'home/contact'
 
   get 'home/service'

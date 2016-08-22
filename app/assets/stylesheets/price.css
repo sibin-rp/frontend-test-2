@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+#i1{
+
+color: white;
+background-color: darkslategrey;
+
+}
+
+#i2{
+
+    background-color: #ff8566;
+    text-align: center;
+    color: white;
+}
+
+#i3{
+ a:hover {background-color: #ff8566}
+}
+
+#i4{
+
+background-color: white;
+height: 100px;
+
+}
+
+.a:hover {
+  background: #f96d55 none repeat scroll 0 0;
+  border: 2px solid #f96d55;
+  color: green;
+}
