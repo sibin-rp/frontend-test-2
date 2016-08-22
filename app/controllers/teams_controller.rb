@@ -1,4 +1,5 @@
 class TeamsController < ApplicationController
+  layout "dashboard" 
   before_action :set_team, only: [:show, :edit, :update, :destroy]
 
   # GET /teams

@@ -1,17 +1,26 @@
 Rails.application.routes.draw do
 
-  get 'dashboard/index'
 
-  get 'dashboard/documentation'
 
   devise_for :users
-  resources :teams
-  resources :posts
+
+
+  scope '/dashboard' do
+    get 'index', to:'dashboard#index'
+    get 'documentation', to:'dashboard#documentation'
+    resources :teams
+    resources :posts
+  end
+
   root 'home#index'
+
+
 
   get 'home/index'
 
   get 'home/about'
+
+  get 'home/price'
 
   get 'home/contact'
 

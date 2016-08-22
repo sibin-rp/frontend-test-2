@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+ruby "2.3.1"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0'
@@ -39,7 +40,7 @@ group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console'
   gem 'meta_request'
-
+  gem "better_errors"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -52,7 +53,9 @@ gem 'foundation-rails'
 gem "font-awesome-rails"
 
 gem 'devise'
+gem 'simple_form'
 gem "paperclip", "~> 5.0.0"
 
-
-
+gem 'metamagic'
+gem 'will_paginate', '~> 3.1.0'
+gem 'faker', '~> 1.6', '>= 1.6.6'
