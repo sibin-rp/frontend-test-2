@@ -1,3 +1,10 @@
 // Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "style.css";
+@import "nivo-slider.css";
+@import "default.css";
+@import "bootstrap.css";
+#header1 {
+    min-height: 100px;
+}
