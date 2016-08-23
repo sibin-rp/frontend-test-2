@@ -14,4 +14,8 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require turbolinks
+//= require bootstrap
+//= require jquery.nivo.slider
+//= require jquery.nivo.slider.pack
 //= require home 
+//= require map
