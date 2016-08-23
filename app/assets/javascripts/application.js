@@ -12,11 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require bootstrap
-//= require bootstrap
+//= require home
+//= require service
 //= require jquery.nivo.slider
 //= require jquery.nivo.slider.pack
-//= require home 
+//= require home
 //= require map
 //= require chart
 //= require wow
