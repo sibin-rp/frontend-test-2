@@ -1,7 +1,11 @@
+$counter_text: #333;
 .counter-area {
   background-size: cover !important;
   position: relative;
   z-index: 0;
+margin-top: 50px;
+
+margin-bottom: 50px;
 }
 .counter-area::before {
   background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0;
@@ -15,12 +19,15 @@
   top: 0;
   width: 100%;
 }
-.counter-area .counter-info {
-  color: #333;
-  padding: 80px 0;
-  position: relative;
-  text-align: center;
+.counter-area {
+  .counter-info {
+    color: $counter_text;
+    padding: 80px 0;
+    position: relative;
+    text-align: center;
+  }
 }
+
 .counter-info .fcount {
   font-family: Raleway;
   font-size: 46px;
@@ -35,14 +42,18 @@
   margin-top: 20px;
   text-transform: capitalize;
 }
-.counter-info .fcount::before {
-  background: #f96d55 none repeat scroll 0 0;
-  content: "";
-  display: block;
-  height: 45px;
-  left: -35px;
-  margin: 0 auto;
-  position: absolute;
-  top: 10px;
-  width: 5px;
+.counter-info{
+  .fcount{
+    &::before {
+      background: #f96d55 none repeat scroll 0 0;
+      content: "";
+      display: block;
+      height: 45px;
+      left: -35px;
+      margin: 0 auto;
+      position: absolute;
+      top: 10px;
+      width: 5px; 
+    }
+  }
 }
