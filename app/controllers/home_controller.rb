@@ -24,6 +24,17 @@ class HomeController < ApplicationController
 
   end
 
+  def practicestyle1
+
+  end
+
+  def practicestyle2
+
+  end
+
+  def singlepractice
+
+  end
   # Team section
 
   def teams

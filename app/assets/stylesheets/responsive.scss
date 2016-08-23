@@ -1,0 +1,446 @@
+/* Normal desktop :1366px. */
+@media (min-width: 1170px) and (max-width: 1400px) {
+.slide-text {
+  top: 60px;
+}
+.cap-img-2 img {
+  top: 0;
+}
+.cap-img img {
+  width: 120%;
+}
+.cap-img-3 img {
+  left: 342px;
+  top: 85px;
+}
+.cap-img-4 img {
+  left: 490px;
+  top: 40px !important;
+  width: 100% !important;
+}
+.cap-title h3 {
+  font-size: 60px;
+  line-height: 55px;
+  margin-bottom: 30px;
+}
+.cap-desc p {
+  margin-bottom: 25px;
+}
+}
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1169px) {
+.mainmanu-area .col-md-12, .mainmanu-area .col-sm-12 {
+  min-height: 0;
+}
+.slide-text {
+  top: 40px;
+}
+.cap-img-4 img {
+  left: 408px;
+  top: -10px;
+  width: 100% !important;
+}
+.cap-img-2 img {
+  top: -20px;
+  width: 120%;
+}
+.cap-img-3 img {
+  left: 345px;
+  top: 3px;
+  width: 130%;
+}
+.cap-desc p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  padding: 12px 15px;
+}
+.cap-title h3 {
+  font-size: 50px;
+  line-height: 45px;
+  margin-bottom: 20px;
+}
+.member-content .practice {
+  margin: 10px 0 5px;
+}
+.portfolio-title {
+  margin-bottom: 10px;
+}
+}
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+.mainmenu {
+  display: none;
+}
+.slide-text {
+  top: 20px;
+}
+.cap-title h3 {
+  font-size: 40px;
+  line-height: 35px;
+  margin-bottom: 20px;
+}
+.cap-desc p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  padding: 14px 20px;
+}
+.cap-more a {
+  font-size: 14px;
+  padding: 10px 30px;
+}
+.cap-img-2 img {
+  top: 20px;
+  width: 100%;
+}
+.small-hidden p {
+  display: none;
+}
+.small-hidden {
+  top: 40px;
+}
+.cap-img-4 img {
+  left: 235px;
+  top: -15px;
+  width: 50% !important;
+}
+.cap-img-3 img {
+  top: -25px;
+  width: 70%;
+}
+.preview-1 .nivo-controlNav {
+  bottom: 0;
+  left: 43%;
+}
+.feature ul.feature-list li {
+  border-right: 1px solid #dddddd;
+  display: inline-block;
+  width: 32.5%;
+}
+.counter-area .counter-info {
+  padding: 44px 0;
+}
+.single-blog .blog-content .header-left a.title {
+  font-size: 18px;
+  width:80%;
+}
+.single-blog .blog-content .header-left-footer {
+  font-size: 14px;
+}
+.single-blog .header-right {
+  width: 14%;
+}
+.main-blog-content {
+  margin-top: 10px;
+}
+.counter-info .fcount {
+  font-size: 40px;
+  font-weight: 600;
+}
+.counter-info h3 {
+  font-size: 22px;
+}
+.box-margin-rs {
+  margin-bottom: 20px;
+}
+.single-item {
+  float: left;
+  position: relative;
+  width: 50%;
+}
+.single-practice-area img {
+  margin-bottom: 20px;
+}
+.media-list img {
+  margin-bottom: 15px;
+  width: 100%;
+  height: auto;
+  margin-right: 0;
+}
+.left-footer-social .top-social li a i {
+  height: 35px;
+  line-height: 35px;
+  width: 35px;
+}
+ul.footer-menu {
+  display: none;
+  float: right;
+}
+.footer-area {
+  padding: 20px 0;
+}
+.member-content .practice {
+  margin: 10px 0 5px;
+}
+.member-content .member-description {
+  padding: 0 5px;
+}
+}
+/* small mobile :320px. */
+@media (max-width: 767px) {
+.container{width:300px;}
+.mainmenu {
+  display: none;
+}
+.slide-text {
+  top: 10px;
+}
+.cap-title h3 {
+  font-size: 16px;
+  line-height: 16px;
+  margin-bottom: 10px;
+}
+.cap-desc p {
+  display: none;
+}
+.cap-more a {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+  padding: 6px 12px;
+}
+.cap-img-2 img {
+  top: 0;
+  width: 130%;
+}
+.cap-img-3 img {
+  left: 20px;
+  top: -24px;
+  width: 85%;
+}
+.cap-img-4 img {
+  left: 80px;
+  top: -8px;
+  width: 55% !important;
+}
+.preview-1 .nivo-controlNav {
+  display: none;
+}
+.slide-text-2 .cap-more a {
+  display: none !important;
+}
+.nivo-directionNav a {
+  top: 29%;
+}
+.preview-1 a.nivo-prevNav {
+  left: 5px;
+}
+.preview-1 a.nivo-nextNav {
+  right: 5px;
+}
+.section-title h3 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: capitalize;
+}
+.section-padding {
+  padding: 40px 0;
+}
+.section-padding2 {
+  padding: 30px 0;
+}
+.section-title p::after {
+  margin: 14px auto;
+}
+.section-title h3 {
+  font-size: 25px;
+  line-height: 25px;
+}
+.featured-details h4 {
+  margin-top: 10px;
+}
+.featured-details p {
+  padding: 0;
+}
+.feature ul.feature-list li {
+  display: block;
+  width: 100%;
+}
+.feature-box {
+  padding: 30px 30px 20px;
+}
+.stats-title {
+  margin: 10px 0 20px;
+}
+h3.stats {
+  margin-bottom: 20px;
+}
+.extension-area .fa-ul {
+  text-align: center;
+}
+.featured-details h4 strong {
+  display: block;
+  font-size: 18px;
+  margin: 0 auto;
+  padding: 0;
+  width: 75%;
+}
+canvas#canvas {
+  margin-bottom: 20px;
+}
+.counter-info .fcount::before {
+  height: 30px;
+  left: -20px;
+  top: 8px;
+  width: 3px;
+}
+.counter-info .fcount {
+  font-size: 30px;
+  font-weight: 500;
+}
+.counter-info h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.counter-area .counter-info {
+  padding: 40px 0;
+}
+.single-blog .blog-content .header-left a.title {
+  font-size: 18px;
+  line-height: 18px;
+  width: 80%;
+}
+.single-blog .blog-content .header-left-footer {
+  line-height: 14px;
+}
+.single-blog {
+  margin-bottom: 20px;
+}
+.single-item {
+  width: 100%;
+}
+.portfolio-title {
+  font-size: 20px;
+}
+.portfolio-content {
+  padding: 0 10px;
+}
+.portfolio-tag {
+  padding: 5px 10px;
+}
+.content-text {
+  font-size: 14px;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+.blog-inner:last-child {
+  margin-bottom: 40px;
+}
+.panel-title a::after {
+  margin: -10px -5px 0 0;
+}
+.panel-title a.collapsed::after {
+  margin: -10px -10px 0 0;
+}
+.panel-default > .panel-heading h4.panel-title a {
+  font-size: 13px;
+}
+.header-area {
+  padding: 0;
+}
+.logo-image {
+  text-align: center;
+}
+}
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.container {width:450px}
+.logo-image {
+  text-align: center;
+}
+.mainmenu {
+  display: none;
+}
+.slide-text {
+  top: 25px;
+}
+.cap-img-4 img {
+  left: 160px;
+  top: -15px;
+}
+.cap-title h3 {
+  font-size: 26px;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+.preview-1 .nivo-controlNav {
+  bottom: 0;
+  left: 38%;
+}
+.preview-1 .nivo-controlNav {
+  padding: 10px 0;
+}
+.nivo-directionNav a {
+  top: 35%;
+}
+.section-title h3 {
+  font-size: 30px;
+  line-height: 30px;
+  margin:0 0 10px;
+}
+.featured-details h4 strong {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+  padding:0;
+}
+.feature ul.feature-list li {
+  display: block;
+  width: 100%;
+}
+.feature-box {
+  transition: all 0.3s ease 0s;
+}
+.feature-box:hover {
+  background: #fcfcfc none repeat scroll 0 0;
+}
+canvas#canvas {
+  margin-bottom: 20px;
+}
+.counter-info h3 {
+  font-size: 26px;
+  font-weight: 400;
+}
+.counter-area .counter-info {
+  padding: 40px 0;
+}
+.counter-info .fcount {
+  font-weight: 500;
+}
+.blog-image img {
+  width: 100%;
+}
+.single-blog .blog-content .header-left a.title {
+  width: 80%;
+}
+.main-blog-content {
+  margin-top: 20px;
+}
+.contact-innder input {
+  margin-bottom: 5px;
+}
+.panel-default > .panel-heading {
+  padding: 20px 10px;
+}
+.single-attorney .attorney-content {
+  text-align: center;
+}
+.portfolio-list .single-item {
+  width: 100%;
+}
+.blog-inner:last-child {
+  margin-bottom:40px;
+}
+.panel-title a.collapsed::after {
+  margin: 0;
+}
+.panel-title a::after {
+  margin: 0;
+}
+.cap-title h3 {
+  font-size: 22px;
+  line-height: 22px;
+}
+.slide-text {
+  top: 16%;
+}
+}

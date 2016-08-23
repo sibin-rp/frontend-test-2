@@ -26,6 +26,12 @@ Rails.application.routes.draw do
 
   get 'home/service'
 
+  get 'home/practicestyle1'
+
+  get 'home/practicestyle2'
+
+  get 'home/singlepractice'
+
   get 'home/blog'
 
   get 'home/blog/:id/show', to:'home#blog_index'
