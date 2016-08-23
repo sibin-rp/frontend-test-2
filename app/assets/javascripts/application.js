@@ -12,8 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require foundation
+//= require bootstrap
 //= require turbolinks
+<<<<<<< HEAD
 //= require_tree 
 //= require bootstrap
 //= require jquery.nivo.slider
@@ -24,3 +25,6 @@ $(function() {
     $(document).foundation();
 
 });
+=======
+//= require home 
+>>>>>>> origi/staging

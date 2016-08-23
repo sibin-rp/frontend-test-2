@@ -1,4 +1,22 @@
-<p id="notice"><%= notice %></p>
+<div class="row">
+  <div class="small-12 columns">
+    <p id="notice"><%= notice %></p>
+    <h1 class="subheader">
+      <%= @post.title %>
+    </h1>
+    <%- if @post.cover_photos.url %>
+    <div class="callout">
+      <%= image_tag @post.cover_photos.url %>
+    </div>
+    <% end %>
+    <div class="row">
+        <div class="small-12 columns">
+            <%=h @post.content %>
+        </div>
+    </div>
 
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+    <%= link_to 'Edit', edit_post_path(@post) %> |
+    <%= link_to 'Back', posts_path %>
+
+  </div>
+</div>
