@@ -1,0 +1,230 @@
+/*=================================*/
+
+
+/* Nivo Slider Demo
+/* November 2010
+/* By: Gilbert Pellegrom
+/* http://dev7studios.com
+/*=================================*/
+
+
+/*====================*/
+
+
+/*=== Reset Styles ===*/
+
+
+/*====================*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    line-height: 1;
+    color: black;
+    background: white;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+caption,
+th,
+td {
+    text-align: left;
+    font-weight: normal;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+}
+
+blockquote,
+q {
+    quotes: "" "";
+}
+
+
+/* HTML5 tags */
+
+header,
+section,
+footer,
+aside,
+nav,
+article,
+figure {
+    display: block;
+}
+
+
+/*===================*/
+
+
+/*=== Main Styles ===*/
+
+
+/*===================*/
+
+body {
+    font: 14px/1.6 Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
+    color: #333;
+    background: #eee;
+}
+
+a,
+a:visited {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    color: #000;
+    text-decoration: none;
+}
+
+.slider-wrapper {
+    width: 100%;
+}
+
+
+/*====================*/
+
+
+/*=== Other Styles ===*/
+
+
+/*====================*/
+
+.clear {
+    clear: both;
+}
+
+.counter-area {
+    background-size: cover !important;
+    position: relative;
+    z-index: 0;
+}
+
+body {
+    color: #444;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.counter-area::before {
+    background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
+.team-area,
+.contact-area {
+    background: #f8f8f8 none repeat scroll 0 0;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+body {
+    color: #444;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.team-members {
+    background: #ffffff none repeat scroll 0 0;
+    border: 1px solid #f8f8f8;
+    padding: 5px;
+    text-align: center;
+}
+
+ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
