@@ -1,6 +1,11 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome";
+
+
+@import "home";
+@import "_servicestyle.scss";
+
 @import "home";
 @import "price";
 @import "contact";
