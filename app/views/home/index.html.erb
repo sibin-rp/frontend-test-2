@@ -3,104 +3,340 @@
 <html lang="en">
 
 <head>
-    <title>Nivo Slider Demo</title>
+    <title>RedPanthers</title>
 
 </head>
 
 <body>
-    <div id="header1" class="container">
-        <h1>RED PANTHERS</h1></div>
-
-    <nav id="navbar-example" class="navbar navbar-default">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-                <a class="navbar-brand" href="#">RP</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-                    <li><a href="#">About Firm</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Price List</a></li>
-                    <li><a href="#">About Firm</a></li>
-
-
-
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Dropdown <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">One more separated link</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Link</a></li>
-                </ul>
+<div class="header-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6">
+						<div class="logo-image">
+							<a href="#" title="Home">
+								<%= image_tag "brand_logo.png" %>
+                                <h1>RED PANTHERS</h1>
+							</a>
+						</div>
+					</div>
+					<div class="hidden-xs col-sm-6">
+						<div class="header-right">
+							<div class="info-box left">
+								<div class="info-icon">
+									<i class="fa fa-phone"></i>
+								</div>
+								<div class="info-content">
+									<h3>Customer Supports &amp; Sells</h3>
+									<p>(+89) 530-352-3027</p>
+								</div>
+							</div>
+							<div class="info-box right">
+								<div class="info-icon">
+									<i class="fa fa-clock-o"></i>
+								</div>
+								<div class="info-content">
+									<h3>Opening Times</h3>
+									<p>Mon - Fri 10.00 - 18.00</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
 
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
+    
+
+    <div class="mainmanu-area">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-12">
+						<!-- Main Menu area -->
+						<div class="mainmenu">
+							<nav>
+								<ul>
+                                    <li class="expand"><a href="index.html">Home</a></li>
+                                    <li class="expand"><a href="about.html">About firm</a></li>
+                                    <li class="expand"><a href="services.html">Services</a></li>
+                                    <li class="expand"><a href="price-list.html">Price list</a></li>
+									<li class="expand">
+										<a href="#">Attorneys</a>
+										<ul class="restrain sub-menu">
+											<li><a href="attorneys-style-1.html">Attorneys Style 1</a></li>
+											<li><a href="attorneys-style-2.html">Attorneys Style 2</a></li>
+											<li><a href="attorneys-style-3.html">Attorneys Style 3</a></li>
+											<li><a href="single-attorney.html">Attorneys Single</a></li>
+										</ul>
+									</li>
+									<li class="expand">
+										<a href="practice-areas-style-1.html"> Practice areas</a>
+										<ul class="restrain sub-menu">
+											<li><a href="practice-areas-style-1.html">Practice areas Style 1</a></li>
+											<li><a href="practice-areas-style-2.html">Practice areas Style 2</a></li>
+										</ul>
+									</li>
+									<li class="expand">
+										<a href="blog.html"> Blog</a>
+										<ul class="restrain sub-menu">
+											<li><a href="single-item.html">Single Item</a></li>
+											<li><a href="tag-page.html">Tag Page</a></li>
+										</ul>
+									</li>
+									<li class="expand">
+										<a href="#">Page</a>
+										<ul class="restrain sub-menu">
+											<li><a href="attorney.html">Attorney</a></li>
+											<li><a href="faq-page.html">FAQ page</a></li>
+										</ul>
+									</li>
+									<li class="expand">
+										<a href="contact.html"> Contact</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<div class="row hidden-lg">
+							<!-- Mobile Menu area -->
+							<div class="col-sm-12 mobile-menu-area">
+								<div class="mobile-menu hidden-md" id="mob-menu" style="display: block;">
+									<nav>
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="about.html">About firm</a></li>
+											<li><a href="services.html">Services</a></li>
+											<li><a href="price-list.html">price list</a></li>
+											<li>
+												<a href="#">Attorneys</a>
+												<ul>
+													<li><a href="attorneys-style-1.html">Attorneys Style 1</a></li>
+													<li><a href="attorneys-style-2.html">Attorneys Style 2</a></li>
+													<li><a href="attorneys-style-3.html">Attorneys Style 3</a></li>
+													<li><a href="single-attorney.html">Attorneys Single</a></li>
+												</ul>
+											</li>
+                                            <li>
+                                                <a href="practice-areas-style-1.html">Practice areas</a>
+                                                <ul>
+                                                    <li><a href="practice-areas-style-1.html">Practice areas Style 1</a></li>
+                                                    <li><a href="practice-areas-style-2.html">Practice areas Style 2</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="blog.html">Blog</a>
+                                                <ul>
+                                                    <li><a href="single-item.html">Single Item</a></li>
+                                                    <li><a href="tag-page.html">Tag Page</a></li>
+                                                </ul>
+                                            </li>
+											<li>
+												<a href="#">Pages</a>
+												<ul>
+													<li><a href="attorney.html">Attorney</a></li>
+													<li><a href="faq-page.html">FAQ page</a></li>
+												</ul>
+											</li>
+                                            <li>
+                                                <a href="contact.html">Contact</a>
+                                            </li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>		
+		</div>
     <div id="wrapper">
 
 
         <div class="slider-wrapper theme-default">
             <div id="slider" class="nivoSlider">
-                <%= image_tag "toystory.jpg" %>
-                    <%= image_tag "nemo.jpg" %>
-                        <%= image_tag "walle.jpg" %>
-            </div>
-            <div id="htmlcaption" class="nivo-html-caption">
-                <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>.
-            </div>
+                
+                    <%= image_tag "bg1.jpg" %>
+                                    <%= image_tag "bg2.jpg" %>
+                        
+                        
+                             
+                  <div class="container slider-height">
+						<div class="row slider-height">
+							<div class="col-md-6 slider-height">
+								<div class="slide-text small-hidden">
+									<!-- layer 1 -->
+									<div class="cap-title title-black wow fadeInUp animated" data-wow-duration="0.9s" data-wow-delay="0s" style="visibility: visible; animation-duration: 0.9s; animation-delay: 0s; animation-name: fadeInUp;">
+										<h3>Experienced <br> Attorneys</h3>
+									</div>
+									
+									<!-- layer 3 -->
+									<div class="cap-more wow fadeInDown animated" data-wow-duration="1.5s" data-wow-delay="1s" style="visibility: visible; animation-duration: 1.5s; animation-delay: 1s; animation-name: fadeInDown;">
+										<a href="#">Learn More</a>
+									</div>	
+
+                                    <div class="cap-img cap-img-2 wow fadeInDown animated animated" data-wow-duration="1.5s" data-wow-delay="1s" style="visibility: visible; animation-duration: 1.5s; animation-delay: 1s; animation-name: fadeInDown;">
+									<%= image_tag "bg1.jpg" %>
+								</div>		
+
+                                		
+								</div>
+															
+							</div>
+						</div>
+					</div>
+            
         </div>
 
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="feature-header section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="featured-inner">
+                        <!-- Section Title start -->
+                        <div class="section-title">
+                            <h3>We are passionate helping clients</h3>
+                            <p>Experience, Reliability, Ethics</p>
+                        </div>
+                        <!-- Featured Details start -->
+                        <div class="featured-details">
+                            <p>Modo aperiam constituto ea sit, ius in magna altera. Quo inani tollit eu. Vocibus omittantur id eos, inani eirmod honestatis pri id, erat vivendum ex vim. Et erat dignissim est, eros utinam eu pri, assum exerci nusquam eu vix.
+                                Id brute fuisset disputationi vim, sea in tritani conceptam, et movet putant euismod nec. <br>Ferri omnis nemore ea qui, nam id blandit appareat pericula.</p>
+                            <h4>Get your Free Consultation <strong>(088) 123-456-7890</strong> Available 24/7</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="feature">
+        <!-- Feature List -->
+        <ul class="feature-list">
+            <!-- Single Feature -->
+            <li class="single-feature">
+                <div class="feature-box">
+                    <p><i class="fa fa-user-secret"></i></p>
+                    <h3>Criminal law</h3>
+                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur ratione voluptatem sequi nesciunt</p>
+                </div>
+            </li>
+            <li class="single-feature">
+                <div class="feature-box">
+                    <p><i class="fa fa-gavel"></i></p>
+                    <h3>Criminal law</h3>
+                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur ratione voluptatem sequi nesciunt</p>
+                </div>
+            </li>
+            <li class="single-feature">
+                <div class="feature-box">
+                    <p><i class="fa fa-heartbeat"></i></p>
+                    <h3>Criminal law</h3>
+                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur ratione voluptatem sequi nesciunt</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="extension-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class=" col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div style="width:100%">
+                        <canvas id="canvas" height="416" width="555" style="width: 555px; height: 416px;"></canvas>
+                    </div>
+                    <script>
+                        var randomScalingFactor = function() {
+                            return Math.round(Math.random() * 6)
+                        };
+                        var barChartData = {
+                            labels: ["2009", "2010", "2011", "2012", "2013", "2014", "2016"],
+                            datasets: [{
+                                fillColor: "rgb(249, 109, 85)",
+                                strokeColor: "rgb(249, 109, 85)",
+                                data: [1, 3, 2, 4, 6, 2, 3]
+                            }]
+                        }
+                        window.onload = function() {
+                            var ctx = document.getElementById("canvas").getContext("2d");
+                            window.myBar = new Chart(ctx).Bar(barChartData, {
+                                responsive: true,
+                                datasetStrokeWidth: 2
+                            });
+                        }
+                    </script>
+                </div>
+                <div class=" col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="extension-inner">
+                        <h2 class="stats-title">
+		                        Last six year <strong>statistics</strong>
+		                    </h2>
+                        <h3 class="stats">
+		                        Year 2009 - 2010 <strong>( 600 cases won )</strong>
+		                    </h3>
+                        <p>Suspendisse commodo auctor molestie. Mauris arisusvitae massa consequat pharetra. Suspendisse dapibus erat lectus rutrum bibendum. Praesent scscelerisque.</p>
+                        <p>Fusce vel enim sapien. Vivamus pellentesque hendrerit erat, sit amet dictum nibh viverra iaculis. Sed porta nisl molestie hendrerit. Integer tempus pulvinar laoreet.</p>
+                        <h3 class="stats-sub">We have provided so far</h3>
+                        <div class="row">
+                            <div class="col-md-16 col-sm-6 col-xs-12">
+                                <ul class="fa-ul">
+                                    <li>
+                                        <i class="fa fa-check"></i> Lorem ipsum dolor sit amet
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-check"></i> Lorem ipsum dolor sit amet
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-check"></i> Lorem ipsum dolor sit amet
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-16 col-sm-6 col-xs-12">
+                                <ul class="fa-ul">
+                                    <li>
+                                        <i class="fa fa-check"></i> Lorem ipsum dolor sit amet
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-check"></i> Lorem ipsum dolor sit amet
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-check"></i> Lorem ipsum dolor sit amet
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
 
 
 
@@ -353,6 +589,161 @@
 
 
 
+<div class="blog-area section-padding">
+					<div class="container">
+				        <div class="row">
+				            <div class="col-md-12 col-sm-12 col-xs-12">
+							<!-- Blog Title -->
+		                        <div class="section-title">
+		                            <h3>Read about our cases</h3>
+		                            <p>Vocibus omittantur id eos, inani eirmod honestatis pri id</p>
+		                        </div>
+				            </div>
+				        </div>
+						<!-- Blog List -->
+						<div class="row section-margin">
+							<div class="col-md-4 col-sm-4 col-xs-12">
+								<!-- Single Blog -->
+								<div class="single-blog">
+								<!-- Blog Image -->
+									<div class="blog-image">
+										<a href="#">
+											<img src="<%= image_path '5.jpg'%>" alt="">
+										</a>
+									</div>
+									<!-- Blog Content -->
+									<div class="blog-content section-margin">
+										<!-- Blog Content Header -->
+										<div class="blog-content-header">
+											<!-- Blog Content Header Left -->
+											<div class="header-left pull-left">
+												<a href="#" class="title">Defending your client</a>
+												<div class="header-left-footer">
+													Posted by
+													<a href="#">Super User</a>
+												</div>
+											</div>
+											<!-- Blog Content Header Right -->
+											<div class="header-right pull-right">
+												<span class="blog-month">Aug</span>
+												<span class="blog-day">17</span>
+											</div>
+										</div>
+										<div class="clear-both"></div>
+										<!-- Main Blog Content Right -->
+										<p class="main-blog-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi… </p>
+									</div>
+									<div class="clear-both"></div>
+									<!-- Blog Footer -->
+									<div class="blog-footer section-margin">
+										<div class="footer-left pull-left">
+											<a href="#">Ream more</a>
+										</div>
+										<div class="footer-right pull-right">
+											in
+											<a href="#">Cases</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-12">
+								<!-- Single Blog -->
+								<div class="single-blog">
+									<!-- Blog Image -->
+									<div class="blog-image">
+										<a href="#">
+											<img src="<%= image_path '6.jpg'%>" alt="">
+										</a>
+									</div>
+									<!-- Blog Content -->
+									<div class="blog-content section-margin">
+										<!-- Blog Content Header -->
+										<div class="blog-content-header">
+											<!-- Blog Content Header Left-->
+											<div class="header-left pull-left">
+												<a href="#" class="title">Your first trial</a>
+												<div class="header-left-footer">
+													Posted by
+													<a href="#">Super User</a>
+												</div>
+											</div>
+											<!-- Blog Content Header Right -->
+											<div class="header-right pull-right">
+												<span class="blog-month">Aug</span>
+												<span class="blog-day">17</span>
+											</div>
+										</div>
+										<div class="clear-both"></div>
+										<!-- Main Blog Content -->
+										<p class="main-blog-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi… </p>
+									</div>
+									<div class="clear-both"></div>
+									<!-- Blog Footer -->
+									<div class="blog-footer  section-margin">
+										<div class="footer-left pull-left">
+											<a href="#">Ream more</a>
+										</div>
+										<div class="footer-right pull-right">
+											in
+											<a href="#">Cases</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-12">
+								<!-- Single Blog -->
+								<div class="single-blog">
+								<!-- Blog Image -->
+									<div class="blog-image">
+										<a href="#">
+											<img src="<%= image_path '7.jpg'%>" alt="">
+										</a>
+									</div>
+									<!-- Blog Content -->
+									<div class="blog-content section-margin">
+										<!-- Blog Content Header -->
+										<div class="blog-content-header">
+											<!-- Blog Content Header Left -->
+											<div class="header-left pull-left">
+												<a href="#" class="title">The value of perks</a>
+												<div class="header-left-footer">
+													Posted by
+													<a href="#">Super User</a>
+												</div>
+											</div>
+											<!-- Blog Content Header Right -->
+											<div class="header-right pull-right">
+												<span class="blog-month">Aug</span>
+												<span class="blog-day">17</span>
+											</div>
+										</div>
+										<div class="clear-both"></div>
+										<!-- Main Blog Content -->
+										<p class="main-blog-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi… </p>
+									</div>
+									<div class="clear-both"></div>
+									<!-- Blog Footer -->
+									<div class="blog-footer  section-margin">
+										<div class="footer-left pull-left">
+											<a href="#">Ream more</a>
+										</div>
+										<div class="footer-right pull-right">
+											in
+											<a href="#">Cases</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+
+
+
+
 
 
 
@@ -404,6 +795,135 @@
             </div>
         </div>
 
+
+
+
+
+
+  <div class="footer-top-area">
+			<div class="container" id="footer">
+				<div class="row">
+					<div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12">
+						<!-- Footer Left -->
+						<div class="footer-left">
+							<div class="left-footer-content">
+								<!-- Footer Logo -->
+								<p>
+									<img src="img/footer-logo.png" alt="">
+								</p>
+								<p>Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law.</p>
+							</div>
+							<!-- Footer Social Widget -->
+							<div class="left-footer-social">
+								<ul class="top-social">
+									<li>
+										<a href="#" target="blank">
+											<i class="fa fa-facebook"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#" target="blank">
+											<i class="fa fa-twitter"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#" target="blank">
+											<i class="fa fa-google-plus"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#" target="blank">
+											<i class="fa fa-linkedin"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#" target="blank">
+											<i class="fa fa-pinterest"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12">
+						<!-- Footer Center -->
+						<div class="business-inner">
+							<!-- Footer Title -->
+							<h3 class="footer-title">
+								<span>Business Hours</span>
+							</h3>
+							<div class="business-hour">
+								<ul>
+									<li>
+										Monday 
+										<b>9:00am - 9:00pm</b>
+									</li>
+									<li>
+										Tuesday 
+										<b>9:00am - 9:00pm</b>
+									</li>
+									<li>
+										Wednesday 
+										<b>9:00am - 9:00pm</b>
+									</li>
+									<li>
+										Thursday 
+										<b>9:00am - 9:00pm</b>
+									</li>
+									<li>
+										Friday 
+										<b>9:00am - 9:00pm</b>
+									</li>
+									<li>
+										Saturday 
+										<b>9:00am - 9:00pm</b>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12">
+						<div class="footer-contact">
+							<!-- Footer Title -->
+							<h3 class="footer-title">
+								<span>Contact info</span>
+							</h3>
+							<div class="contact-address">
+								<p>2901 Marmora Road, Glassgow, Seattle,
+									<br> WA 98122-1090
+									<br>Telephone: +1 1234-567-89000 
+									<br>FAX: +1 0123-4567-8900
+									<br>Email: <a href="mailto:admin@Bootexpert.com ">admin@Bootexpert.com </a>
+									<br>Website: <a href="#">www.bootexpert.com </a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="footer-area">
+			<div class="container">
+				<div class="row">
+					<!-- Copyright Araa -->
+					<div class="col-md-8">
+						<p>Copyright © 2013 - 2016 <a href="http://bootexperts.com/" target="blank">BootExperts</a>. All rights reserved</p>
+					</div>
+					<div class="col-md-4">
+						<!-- Footer Menu -->
+						<ul class="footer-menu">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Sample Sites</a></li>
+							<li><a href="#">Joomla.org</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+<script>new WOW().init();</script>
 
 </body>
 
