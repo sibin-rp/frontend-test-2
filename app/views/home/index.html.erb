@@ -1,6 +1,406 @@
-<div class="jumbotron">
-  <div class="container">
-    <h1>Hello, world!</h1>
-    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
-  </div>
-</div>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<html lang="en">
+
+<head>
+    <title>Nivo Slider Demo</title>
+
+</head>
+
+<body>
+    <div id="header1" class="container">
+        <h1>RED PANTHERS</h1></div>
+
+    <nav id="navbar-example" class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                <a class="navbar-brand" href="#">RP</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">About Firm</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Price List</a></li>
+                    <li><a href="#">About Firm</a></li>
+
+
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Link</a></li>
+                </ul>
+
+
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div id="wrapper">
+
+
+        <div class="slider-wrapper theme-default">
+            <div id="slider" class="nivoSlider">
+                <%= image_tag "toystory.jpg" %>
+                    <%= image_tag "nemo.jpg" %>
+                        <%= image_tag "walle.jpg" %>
+            </div>
+            <div id="htmlcaption" class="nivo-html-caption">
+                <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>.
+            </div>
+        </div>
+
+    </div>
+
+
+<div class="counter-area" style="background: "<%= image_tag "counter-bg.jpg" %>">
+			<div class="container">
+				<div class="row">
+					<div class=" col-lg-3 col-md-3 col-sm-6 col-xs-6">
+						<div class="single-counter wow animated" data-wow-duration="1.5s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.3s;">
+							<div class="counter-info">
+								<span class="fcount">
+									<span class="counter">365</span>
+								</span>
+								<h3>Happy Clients</h3>								
+							</div>
+						</div>
+					</div>
+					<div class=" col-lg-3 col-md-3 col-sm-6 col-xs-6">
+						<div class="single-counter wow animated" data-wow-duration="1.5s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.3s;">
+							<div class="counter-info">
+								<span class="fcount">
+									<span class="counter">95</span>%</span>
+								<h3>Cases success</h3>								
+							</div>
+						</div>
+					</div>
+					<div class=" col-lg-3 col-md-3 col-sm-6 col-xs-6">
+						<div class="single-counter wow animated" data-wow-duration="1.5s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.3s;">
+							<div class="counter-info">
+								<span class="fcount">
+									<span class="counter">754</span>k</span>
+								<h3>Recovered</h3>								
+							</div>
+						</div>
+					</div>
+					<div class=" col-lg-3 col-md-3 col-sm-6 col-xs-6">
+						<div class="single-counter wow animated" data-wow-duration="1.5s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.3s;">
+							<div class="counter-info">
+								<span class="fcount">
+									<span class="counter">821</span>
+								</span>
+								<h3>Cases done</h3>								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+<div class="team-area section-padding">
+		    <div class="container">
+		        <div class="row">
+		            <div class="col-md-12 col-sm-12 col-xs-12">
+						<!-- Team Title -->
+                        <div class="section-title text-center">
+                            <h1>Meet Our Teams </br></h1>
+                        
+                        </div>
+		            </div>
+		        </div>
+				<div class="row section-margin">
+					<div class="col-md-3 col-sm-4 col-xs-12">
+						<!-- Team Member -->
+						<div class="team-members">
+							<!-- Member Image -->
+							<div class="member-image">
+													<img src="<%= image_path "1.jpg"%>" class="img-responsive" alt="">
+							</div>
+							<!-- Member Content -->
+							<div class="member-content text-center">
+								<h4 class="member-name">
+									<a href="#">Jennifer Lawrence</a>
+								</h4>
+								<div class="position-title">Manager</div>
+								<p class="practice">Practice areas</p>
+								<p class="member-description">Business, Real Estate, Land, Family, Cyber Crime</p>
+							</div>
+							<!-- Member Widget -->
+							<div class="member-widget">
+								<ul>
+									<li>
+										<a href="#" target="blank" title="Facebook">
+											<i class="fa fa-facebook"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#" target="blank" title="Twitter">
+											<i class="fa fa-twitter"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#" target="blank" title="Googleplus">
+											<i class="fa fa-google-plus"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#" title="Mail">
+											<i class="fa fa-envelope"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-4 col-xs-12">
+						<div class="team-members">
+							<!-- Member Image -->
+							<div class="member-image">
+															<img src="<%= image_path "2.jpg"%>" class="img-responsive" alt="">
+							</div>
+							<!-- Member Content -->
+							<div class="member-content text-center">
+								<h4 class="member-name">
+									<a href="#">Ashim Kumar</a>
+								</h4>
+								<div class="position-title">Founder & CEO </div>
+								<p class="practice">Practice areas</p>
+								<p class="member-description">Criminal, Business, Land, Cyber Crime, Real Estate,</p>
+							</div>
+							<!-- Member Widget -->
+							<div class="member-widget">
+								<ul>
+									<li>
+										<a href="#" target="blank" title="Facebook">
+											<i class="fa fa-facebook"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#" target="blank" title="Twitter">
+											<i class="fa fa-twitter"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#" target="blank" title="Googleplus">
+											<i class="fa fa-google-plus"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#" title="Mail">
+											<i class="fa fa-envelope"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-4 col-xs-12">
+							<!-- Member Image -->
+						<div class="team-members">
+							<div class="member-image">
+															<img src="<%= image_path "3.jpg"%>" class="img-responsive" alt="">
+							</div>
+							<!-- Member Content -->
+							<div class="member-content text-center">
+								<h4 class="member-name">
+									<a href="#">Salim Rana</a>
+								</h4>
+								<div class="position-title">Counsel</div>
+								<p class="practice">Practice areas</p>
+								<p class="member-description">Criminal, Business, Land, Cyber Crime, Real Estate,</p>
+							</div>
+							<!-- Member Widget -->
+							<div class="member-widget">
+								<ul>
+									<li>
+										<a href="#" target="blank" title="Facebook">
+											<i class="fa fa-facebook"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#" target="blank" title="Twitter">
+											<i class="fa fa-twitter"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#" target="blank" title="Googleplus">
+											<i class="fa fa-google-plus"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#" title="Mail">
+											<i class="fa fa-envelope"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 hidden-sm hidden-xs">
+							<!-- Member Image -->
+						<div class="team-members">
+							<div class="member-image">
+														<img src="<%= image_path "4.jpg"%>" class="img-responsive" alt="">
+							</div>
+							<!-- Member Content -->
+							<div class="member-content text-center">
+								<h4 class="member-name">
+									<a href="#">Emma Watson</a>
+								</h4>
+								<div class="position-title">Associate</div>
+								<p class="practice">Practice areas</p>
+								<p class="member-description">Real Estate, Criminal, Business, Cyber Crime, Family,</p>
+							</div>
+							<!-- Member Widget -->
+							<div class="member-widget">
+								<ul>
+									<li>
+										<a href="#" target="blank" title="Facebook">
+											<i class="fa fa-facebook"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#" target="blank" title="Twitter">
+											<i class="fa fa-twitter"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#" target="blank" title="Googleplus">
+											<i class="fa fa-google-plus"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#" title="Mail">
+											<i class="fa fa-envelope"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+		    </div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="contact-area section-padding">
+			<div class="container">
+		        <div class="row">
+		            <div class="col-md-12 col-sm-12 col-xs-12">
+						<!-- Contact Title -->
+                        <div class="section-title">
+                            <h3>Get a free consultation</h3>
+							<p></p>
+                        </div>
+		            </div>
+		        </div>
+				<!-- Contact Form -->
+		        <div class="contact-innder">
+					<form action="#">
+						<div class="row pad">
+							<div class="col-md-4 col-sm-4 col-xs-12">
+								<input type="text" value="Name..." onblur="if (this.value=='') this.value='Name...';" onfocus="if (this.value=='Name...') this.value='';" id="name" name="name">
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-12">
+								<input type="email" value="Email..." onblur="if (this.value=='') this.value='Email...';" onfocus="if (this.value=='Email...') this.value='';" id="email" name="email">
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-12">
+								<input type="text" value="Subject..." onblur="if (this.value=='') this.value='Subject...';" onfocus="if (this.value=='Subject...') this.value='';" id="subject" name="subject">
+							</div>
+						</div>
+						<div class="row pad">
+							<div class="col-xs-12">
+								<textarea onblur="if (this.value=='') this.value='Message...';" onfocus="if (this.value=='Message...') this.value='';" id="message" name="message">Message...</textarea>
+							</div>
+						</div>
+						<div class="row pad">
+							<div class="col-md-4 col-sm-4 col-xs-12 col-md-offset-4 col-sm-offset-4">
+								<input type="text" required="" placeholder="3 + 4 = ?" name="sccaptcha">
+							</div>
+						</div>
+						<div class="row center">
+							<div class="col-md-4 col-sm-4 col-xs-12 col-md-offset-4 col-sm-offset-4">
+								<input type="submit" value="Send Message" class="btn btn-primary">
+							</div>
+						</div>
+					</form>		        	
+		        </div>
+			</div>
+		</div>
+
+
+</body>
+
+</html>

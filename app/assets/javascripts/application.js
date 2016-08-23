@@ -14,6 +14,13 @@
 //= require jquery_ujs
 //= require foundation
 //= require turbolinks
-//= require_tree .
+//= require_tree 
+//= require bootstrap
+//= require jquery.nivo.slider
+//= require jquery.nivo.slider.pack
 
-$(function(){ $(document).foundation(); });
+$(function() {
+    $('#slider').nivoSlider();
+    $(document).foundation();
+
+});
