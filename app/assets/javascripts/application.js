@@ -14,17 +14,8 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require turbolinks
-<<<<<<< HEAD
-//= require_tree 
 //= require bootstrap
 //= require jquery.nivo.slider
 //= require jquery.nivo.slider.pack
-
-$(function() {
-    $('#slider').nivoSlider();
-    $(document).foundation();
-
-});
-=======
 //= require home 
->>>>>>> origi/staging
+//= require map

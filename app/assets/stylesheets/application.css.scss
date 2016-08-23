@@ -1,25 +1,10 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
-
 @import "font-awesome";
-
-
 @import "home";
-
+@import "price.css";
+@import "contact.css";
+@import "counter.css";
 @import "teams.css";
-
-#id1{
-    text-align: center;
-}
-#i1{
-    padding-left:70px;
-    text-align: center;
-}
-
-.prac{
-    color: #f96d55;
-    margin: 20px 0 5px;
-}
-
-
-
+@import "style.css";
+@import "nivo-slider.css";
