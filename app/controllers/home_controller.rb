@@ -12,7 +12,9 @@ class HomeController < ApplicationController
 
   end
 
-  # Blog Section
+  def price
+
+  end
 
   def blog
 
