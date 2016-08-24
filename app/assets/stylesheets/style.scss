@@ -117,6 +117,11 @@ ul {
     padding: 0
 }
 
+pre {
+    background-color:black;
+    color: red;
+}
+
 h1,
 h2,
 h3,
@@ -313,11 +318,13 @@ ul.footer-menu {
 .portfolio-list .mix {
     display: none;
 }
+
 body {
     font: 14px/1.6 Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
     color: #333;
-    background:white;
+    background: white;
 }
+
 .mainmenu ul li ul.sub-menu li a {
     color: #ffffff;
     font-family: "Roboto", sans-serif;
@@ -653,6 +660,7 @@ h3.stats strong {
     margin: 0;
     padding: 0;
 }
+
 .team-members .member-widget ul li {
     display: inline-block;
     list-style: outside none none;
