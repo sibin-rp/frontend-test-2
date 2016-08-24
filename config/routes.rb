@@ -48,6 +48,22 @@ Rails.application.routes.draw do
 
   get 'home/team/:id/show', to:'home#team_index'
 
+  get 'home/team_show'
+
+
+  get 'home/team_show1'
+
+
+  get 'home/team_show2'
+
+
+  get 'home/team_show3'
+
+
+  get 'home/faq'
+
+
+
   get 'home/get_ajax'
 
   post 'home/post_ajax'
