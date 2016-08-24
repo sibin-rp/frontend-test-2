@@ -60,9 +60,9 @@ Rails.application.routes.draw do
 
 
 
-  get 'home/teams'
+  get 'home/teams', to:'home#teams'
 
-  get 'home/team/:id/show', to:'home#team_index'
+ 
 
   get 'home/team_show'
 
