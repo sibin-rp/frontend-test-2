@@ -123,7 +123,7 @@ h3,
 h4,
 h5,
 h6 a {
-    color: #404244;
+    color: black;
     font-family: Raleway;
     font-weight: 500;
     line-height: 1.1;
@@ -490,9 +490,11 @@ h2.portfolio-title a:hover,
     transition: all 0.3s ease 0s;
 }
 
-.feature-box h3 {
-    font-size: 18px;
-    text-transform: uppercase;
+.feature-box {
+    h3 {
+        font-size: 18px;
+        text-transform: uppercase;
+    }
 }
 
 
@@ -508,9 +510,11 @@ h2.portfolio-title a:hover,
     text-transform: capitalize;
 }
 
-h3.stats {
-    font-size: 26px;
-    margin-bottom: 30px;
+h3 {
+    .stats {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
 }
 
 h3.stats strong {
