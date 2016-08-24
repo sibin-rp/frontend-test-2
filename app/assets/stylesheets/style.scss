@@ -9,10 +9,10 @@
 
 
 -----------------------------------------------------------------------------------
-    
+
     CSS INDEX
     ===================
-	
+
     1. Theme Default CSS (body, link color, section etc)
 	2.  Header CSS
 	3.  MainMenu CSS
@@ -35,11 +35,11 @@
 	20. Attorneys Style 3 CSS
 	21. Practice page CSS
 		21.1 Practice Area Style 2 CSS
-	22. Blog Page CSS	
+	22. Blog Page CSS
 	23. Single Item Page CSS
 	24. Tag Item Page CSS
 	25. Contact Page CSS
-		
+
 -----------------------------------------------------------------------------------*/
 
 
@@ -313,7 +313,11 @@ ul.footer-menu {
 .portfolio-list .mix {
     display: none;
 }
-
+body {
+    font: 14px/1.6 Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
+    color: #333;
+    background:white;
+}
 .mainmenu ul li ul.sub-menu li a {
     color: #ffffff;
     font-family: "Roboto", sans-serif;
@@ -649,7 +653,6 @@ h3.stats strong {
     margin: 0;
     padding: 0;
 }
-
 .team-members .member-widget ul li {
     display: inline-block;
     list-style: outside none none;

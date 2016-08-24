@@ -1,0 +1,270 @@
+
+/*  Practice page CSS */
+.practice-area{
+  padding-bottom:50px;
+
+}
+.portfolio_menu {
+  margin-bottom: 50px;
+  text-align: center;
+}
+.portfolio_menu li {
+  background: #ffffff none repeat scroll 0 0;
+  border: 1px solid #dddddd;
+  border-radius: 30px;
+  color: #999999;
+  cursor: pointer;
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0;
+  padding: 8px 16px;
+}
+.portfolio_menu li.active {
+  background: #f96d55 none repeat scroll 0 0;
+  border: 1px solid #f96d55;
+  color: #fff;
+}
+figure.effect-roxy img {
+  max-width: none;
+  transform: translate3d(-50px, 0px, 0px);
+  transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
+  width: calc(100% + 60px);
+}
+.grid figure img {
+  display: block;
+  max-width: 100%;
+  min-height: 100%;
+  opacity: 0.8;
+  position: relative;
+  max-height: 300px;
+}
+.single-item {
+  float: left;
+  position: relative;
+  width: 33%;
+}
+figure.effect-roxy img {
+  max-width: none;
+  transform: translate3d(-50px, 0px, 0px);
+  transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
+  width: calc(100% + 60px);
+}
+figure.effect-roxy {
+  background: rgba(0, 0, 0, 0.9) none repeat scroll 0 0;
+}
+.grid figure {
+  float: left;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+figure.effect-roxy:hover img {
+  opacity: 0.7;
+  transform: translate3d(0px, 0px, 0px);
+}
+figure.effect-roxy figcaption::before {
+  bottom: 20px;
+  content: "";
+  left: 20px;
+  opacity: 0;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  transform: translate3d(-20px, 0px, 0px);
+  transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
+}
+figure.effect-roxy figcaption {
+  padding: 3em;
+  text-align: left;
+}
+.grid figure figcaption, .grid figure figcaption > a {
+  cursor: pointer;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+figure.effect-roxy figcaption::before {
+  border: 2px solid #ffffff;
+}
+figure.effect-roxy:hover figcaption::before, figure.effect-roxy:hover p {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
+figure.effect-roxy:hover p a {
+  color: #ffffff;
+  font-weight: 400;
+  text-decoration: none;
+}
+.grid figure p {
+  font-size: 68.5%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+figure.effect-roxy:hover h2 {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
+figure.effect-roxy h2 {
+  opacity: 0;
+  padding: 30% 0 10px;
+  transform: translate3d(10px, 0px, 0px);
+  transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
+}
+.grid figure h2 {
+  color: #fff;
+  font-size: 22px;
+  text-transform: capitalize;
+  word-spacing: -0.15em;
+}
+figure.effect-roxy p {
+  opacity: 0;
+  transform: translate3d(-10px, 0px, 0px);
+  transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
+}
+/*practicestyle2*/
+.practice-area2{
+  padding-bottom:50px;
+
+}
+.portfolio-image {
+  position: relative;
+}
+.portfolio-effect {
+  background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+  bottom: 0;
+  height: 0;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 0.2s ease 0s;
+  width: 0;
+}
+.portfolio2-inner:hover .portfolio-effect {
+  height: 100%;
+  opacity: 1;
+  width: 100%;
+}
+.portfolio-content {
+  box-sizing: border-box;
+  padding: 15px;
+  color:#fff;
+  a{
+    color:white;
+  }
+}
+.portfolio-title{
+  margin-bottom: 5px;
+  margin-top: 0;
+  font-size: 30px;
+  color: white;
+}
+.content-text {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.portfolio-tag {
+  background: #000 none repeat scroll 0 0;
+  bottom: 0;
+  color: #fff;
+  left: 0;
+  list-style: outside none none;
+  padding: 8px 10px;
+  position: absolute;
+  right: 0;
+}
+.portfolio-content.overlay-mode {
+  bottom: 0;
+  height: 0;
+  left: 0;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  visibility: hidden;
+}
+.portfolio2-inner:hover .portfolio-content.overlay-mode {
+  height: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+.overlay-mode .content-text, .overlay-mode .portfolio-content-link {
+  opacity: 0;
+  transition: opacity 0.3s ease 0.6s;
+}
+.portfolio2-inner:hover .overlay-mode .content-text, .portfolio2-inner:hover .overlay-mode .portfolio-content-link {
+  opacity: 1;
+}
+.overlay-mode .portfolio-title {
+  margin-top: -5px;
+  opacity: 0;
+  transition: all 0.2s ease 0.2s;
+}
+.portfolio2-inner:hover .overlay-mode .portfolio-title {
+  margin-top: 0;
+  opacity: 1;
+}
+.overlay-mode .portfolio-tag {
+  opacity: 0;
+  transition: opacity 0.3s ease 0.9s;
+}
+.portfolio2-inner:hover .overlay-mode .portfolio-tag {
+  opacity: 1;
+}
+/******************/
+/*singlepractice*/
+a {
+    color: #f96d55;
+    transition: all 0.3s ease 0s;
+}
+.single-item-header i {
+  color: #999999;
+}
+.single-item-header a:hover {
+  color: #5c5c5c;
+}
+.single-item-footer {
+  border-bottom: 1px solid #f5f5f5;
+  border-top: 1px solid #f5f5f5;
+  display: block;
+  margin: 16px 0 4px;
+  overflow: hidden;
+  padding: 10px 0;
+}
+span.item-preview {
+  border-right: 1px solid #f5f5f5;
+  color: #959595;
+  padding-right: 15px;
+}
+.footer-bottom h3 {
+  font-size: 36px;
+  font-weight: 300;
+  padding: 50px 0 0;
+}
+h3.item-comment-counter {
+  font-size: 36px;
+}
+.form-group .inputbox:focus {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
+  border-color: #66afe9;
+}
+.form-group input.inputbox {
+  height: 32px;
+}
+.form-group textarea.inputbox {
+  width: 100%;
+  height: 190px;
+}
+.comment-area {
+  padding: 16px;
+}
+.comment-area .btn-secondary {
+  font-size: 16px;
+}
