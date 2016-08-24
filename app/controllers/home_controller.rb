@@ -8,33 +8,33 @@ class HomeController < ApplicationController
   def contact
   end
 
-  def service 
+  def service
 
-  end 
+  end
 
   def price
+
   end
-  # Blog Section 
 
-  def blog 
+  def blog
 
-  end 
+  end
 
   def blog_show
 
-  end 
+  end
 
-  # Team section 
+  # Team section
 
-  def teams 
+  def teams
 
-  end 
+  end
 
-  def team_show 
+  def team_show
 
-  end 
+  end
 
-  # To Test GET,POST,PUT/PATCH and DELETE 
+  # To Test GET,POST,PUT/PATCH and DELETE
   def get_ajax
     render json:{
       name:"AJAX",
@@ -44,18 +44,18 @@ class HomeController < ApplicationController
 
   def post_ajax
     render json: params.to_json
-  end 
+  end
 
   def put_ajax id
     render json:{
-      id: id 
+      id: id
     }
-  end 
+  end
   def del_ajax
     render json:{
       status: 200,
       message:"Object deleted"
     }
-  end 
+  end
 
 end

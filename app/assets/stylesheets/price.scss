@@ -1,14 +1,17 @@
 @charset "utf-8";
 
 #i1{
-
+text-align: center;
 color: white;
 background-color: darkslategrey;
+font-size: 50px;
 
 }
 
 #i2{
-
+  padding-top: 20px;
+  padding-left: 20px;
+    font-size: 15px;
     background-color: #ff8566;
     text-align: center;
     color: white;
@@ -25,8 +28,3 @@ height: 100px;
 
 }
 
-.a:hover {
-  background: #f96d55 none repeat scroll 0 0;
-  border: 2px solid #f96d55;
-  color: green;
-}

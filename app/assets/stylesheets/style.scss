@@ -1,181 +1,139 @@
-/*=================================*/
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Lawxpert Responsive HTML5 Template.
+    Template URI: http://bootexperts.com
+    Description: This is html5 template
+    Author: BootExperts
+    Author URI: http://bootexperts.com
+    Version: 1.0
 
 
-/* Nivo Slider Demo
-/* November 2010
-/* By: Gilbert Pellegrom
-/* http://dev7studios.com
-/*=================================*/
+-----------------------------------------------------------------------------------
+    
+    CSS INDEX
+    ===================
+	
+    1. Theme Default CSS (body, link color, section etc)
+	2.  Header CSS
+	3.  MainMenu CSS
+	4.  Slider CSS
+	5.  Featured CSS
+	6.  Extension CSS
+	7.  Counter CSS
+	8.  Team CSS
+	9.  Blog CSS
+	10. Contact CSS
+	11. Footer-Top CSS
+	12. Footer CSS
+	13. About page CSS
+	14. Services page CSS
+	15. Attonrney page CSS
+	16. Price list page CSS
+	17. Faq-page CSS
+	18. Attorneys Style 1 CSS
+	19. Attorneys Style 2 CSS
+	20. Attorneys Style 3 CSS
+	21. Practice page CSS
+		21.1 Practice Area Style 2 CSS
+	22. Blog Page CSS	
+	23. Single Item Page CSS
+	24. Tag Item Page CSS
+	25. Contact Page CSS
+		
+-----------------------------------------------------------------------------------*/
 
 
-/*====================*/
+/*----------------------------------------*/
 
 
-/*=== Reset Styles ===*/
-
-
-/*====================*/
+/*  1.  Theme default CSS
+/*----------------------------------------*/
 
 html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
+body {
+    height: 100%;
+}
+
+.floatleft {
+    float: left
+}
+
+.floatright {
+    float: right
+}
+
+.alignleft {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px
+}
+
+.alignright {
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 15px
+}
+
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px
+}
+
+a:focus {
+    outline: 0px solid
+}
+
+a:focus,
+a:hover {
+    text-decoration: none;
+}
+
+a {
+    color: #f96d55;
+    transition: all 0.3s ease 0s;
+}
+
+a:hover {
+    color: #f62e0b;
+}
+
+img {
+    max-width: 100%;
+    height: auto
+}
+
+.fix {
+    overflow: hidden
+}
+
+a {
+    transition: all 0.3s ease 0s;
+    text-decoration: none
+}
+
+ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-font,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-weight: inherit;
-    font-style: inherit;
-    font-size: 100%;
-    font-family: inherit;
-    vertical-align: baseline;
-}
-
-body {
-    line-height: 1;
+h6 a {
     color: black;
-    background: white;
+    font-family: Raleway;
+    font-weight: 500;
+    line-height: 1.1;
 }
 
-table {
-    border-collapse: separate;
-    border-spacing: 0;
-}
-
-caption,
-th,
-td {
-    text-align: left;
-    font-weight: normal;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: "";
-}
-
-blockquote,
-q {
-    quotes: "" "";
-}
-
-
-/* HTML5 tags */
-
-header,
-section,
-footer,
-aside,
-nav,
-article,
-figure {
-    display: block;
-}
-
-
-/*===================*/
-
-
-/*=== Main Styles ===*/
-
-
-/*===================*/
-
-body {
-    font: 14px/1.6 Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
-    color: #333;
-    background: #eee;
-}
-
-a,
-a:visited {
-    color: blue;
-    text-decoration: none;
-}
-
-a:hover,
-a:active {
-    color: #000;
-    text-decoration: none;
-}
-
-.slider-wrapper {
-    width: 100%;
-}
-
-
-/*====================*/
-
-
-/*=== Other Styles ===*/
-
-
-/*====================*/
-
-.clear {
-    clear: both;
-}
-
-.counter-area {
-    background-size: cover !important;
-    position: relative;
-    z-index: 0;
+h1,
+h2,
+h3 {
+    font-weight: 300;
+    margin: 0 0 20px;
 }
 
 body {
@@ -184,6 +142,415 @@ body {
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
+}
+
+.btn {
+    transition: all 0.3s ease 0s;
+}
+
+.clear {
+    clear: both;
+}
+
+.section-title,
+.contact-area .center,
+.single-attorney .attorney-content,
+.feature-header {
+    text-align: center;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.section-title h3 {
+    font-size: 46px;
+    line-height: 46px;
+    text-transform: capitalize;
+}
+
+.section-title p:after {
+    background: #f96d55 none repeat scroll 0 0;
+    content: "";
+    display: block;
+    height: 2px;
+    margin: 24px auto;
+    width: 10%;
+}
+
+.section-title p {
+    font-size: 16px;
+}
+
+.section-margin {
+    margin-top: 20px;
+}
+
+
+/*----------------------------------------*/
+
+
+/*  2. Header CSS
+/*----------------------------------------*/
+
+.header-area {
+    padding: 30px 0;
+}
+
+.header-area .header-right .info-icon {
+    background: transparent none repeat scroll 0 0;
+    border: 1px solid #777;
+    border-radius: 4px;
+    color: #777;
+    display: block;
+    float: left;
+    font-size: 22px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    width: 40px;
+}
+
+.info-box:hover .info-icon {
+    background: #f96d55 none repeat scroll 0 0;
+    border: 1px solid #f96d55;
+    color: #ffffff;
+}
+
+.header-area .header-right .info-content {
+    float: left;
+    margin-left: 10px;
+}
+
+.header-area .header-right .info-content h3 {
+    color: #777;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 0 2px;
+}
+
+.header-right,
+ul.footer-menu {
+    float: right;
+}
+
+.header-area .header-right .info-box {
+    float: left;
+    margin-top: 10px;
+}
+
+.header-area .header-right .info-box.left {
+    margin-right: 20px;
+}
+
+
+/*----------------------------------------*/
+
+
+/*  3. MainMenu CSS
+/*----------------------------------------*/
+
+.mainmanu-area {
+    border-bottom: 2px solid #f96d55;
+}
+
+.mainmenu {
+    background: #343434;
+}
+
+.mainmenu ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.mainmenu ul li a {
+    color: #bdbbbb;
+    display: block;
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    padding: 20px 15px;
+    position: relative;
+    text-transform: capitalize;
+}
+
+.mainmenu ul li ul.sub-menu {
+    background: #222222 none repeat scroll 0 0;
+    text-align: left;
+    top: 104%;
+    width: 250px;
+    z-index: 999;
+}
+
+.restrain {
+    opacity: 0;
+    position: absolute;
+    transform: scaleY(0);
+    transform-origin: 0 0 0;
+    transition: all 0.5s ease 0s;
+    z-index: -99;
+}
+
+.mainmenu ul li ul.sub-menu li {
+    border-bottom: 1px solid #616369;
+    display: block;
+    transition: all 0.3s ease 0s;
+}
+
+.mainmenu ul li ul.sub-menu li:hover {
+    border-bottom: 1px solid #F96D55;
+}
+
+.mainmenu ul li ul.sub-menu li:hover:last-child,
+.mainmenu ul li ul.sub-menu li:last-child {
+    border-bottom: none;
+}
+
+.mainmenu ul li ul li a::after,
+.mainmenu ul li span a::after,
+.portfolio-list .mix {
+    display: none;
+}
+
+.mainmenu ul li ul.sub-menu li a {
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    padding: 8px 20px;
+    text-transform: none;
+}
+
+.expand:hover .restrain {
+    opacity: 1;
+    transform: scaleY(1);
+    z-index: 9999;
+}
+
+.mainmenu ul li a:hover,
+.restrain a:hover {
+    color: #ffffff !important;
+    background: #444444;
+}
+
+
+/*----------------------------------------*/
+
+
+/*  4. Slider CSS
+/*----------------------------------------*/
+
+.cap-title h3 {
+    color: #fff;
+    font-family: Droid Serif;
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 65px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.cap-desc p {
+    background: #121010 none repeat scroll 0 0;
+    font-family: Droid Serif;
+    font-size: 16px;
+    margin-bottom: 40px;
+    padding: 22px 24px;
+}
+
+.cap-more a {
+    background: #f96d55 none repeat scroll 0 0;
+    color: #fff;
+    font-family: droid serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 13px 40px;
+    text-transform: uppercase;
+}
+
+.cap-more {
+    display: inline-flex;
+}
+
+.slide-text {
+    position: absolute;
+    top: 130px;
+    z-index: 99;
+}
+
+.slider-height {
+    height: 100%;
+}
+
+#slider-direction-3 .cap-img img {
+    left: 200px;
+    top: -25px;
+}
+
+.cap-more a:hover {
+    background: #fff none repeat scroll 0 0;
+    color: #f96d55;
+}
+
+.cap-img-3 img {
+    left: 200px;
+    top: 115px;
+}
+
+.cap-img-4 img {
+    left: 308px;
+    top: 60px;
+    width: 150% !important;
+}
+
+.cap-img-2 img {
+    top: 70px;
+}
+
+.title-black h3 {
+    color: #1e1e1e;
+}
+
+
+/*----------------------------------------*/
+
+
+/*  5. Featured CSS
+/*----------------------------------------*/
+
+.featured-details p {
+    padding: 0 50px;
+}
+
+.featured-details h4 {
+    color: #555555;
+    font-size: 20px;
+    line-height: 40px;
+    margin-top: 40px;
+}
+
+.featured-details h4 strong {
+    background: #f96d55 none repeat scroll 0 0;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    color: #ffffff;
+    font-weight: 400;
+    padding: 12px;
+    transition: all 0.3s ease 0s;
+}
+
+.featured-details h4 strong:hover {
+    background: transparent none repeat scroll 0 0;
+    border: 1px solid #f96d55;
+    color: #f96d55;
+}
+
+.feature ul.feature-list li {
+    border-right: 1px solid #ddd;
+    display: inline-block;
+    width: 33%;
+}
+
+.feature ul.feature-list li:last-child {
+    border-right: none;
+}
+
+.feature ul.feature-list {
+    border: 1px solid #ddd;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+}
+
+.feature-box {
+    padding: 50px 30px 20px;
+}
+
+.feature ul.feature-list li:hover .feature-box p i,
+.cate-widget-list ul li:hover,
+h2.portfolio-title a:hover,
+.contact-info-box i:hover,
+.attorney-title span,
+.artical-stats span,
+.contact-address a:hover,
+.single-blog .blog-content .header-left a.title:hover,
+.team-members .member-widget ul li a:hover,
+.member-content .member-name a:hover,
+.extension-area .fa-ul li:hover i {
+    color: #f96d55;
+}
+
+.feature-box p i {
+    font-size: 46px;
+    transition: all 0.3s ease 0s;
+}
+
+.feature-box {
+    h3 {
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+}
+
+
+/*----------------------------------------*/
+
+
+/*  6. Extension CSS
+/*----------------------------------------*/
+
+.stats-title {
+    font-size: 46px;
+    margin: 10px 0 30px;
+    text-transform: capitalize;
+}
+
+h3 {
+    .stats {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+}
+
+h3.stats strong {
+    color: #f96d55;
+    font-weight: 300;
+}
+
+.stats-sub {
+    border-bottom: 1px solid #ddd;
+    font-size: 26px;
+    margin: 20px 0;
+    padding: 0 0 20px;
+    text-transform: capitalize;
+}
+
+.extension-area .fa-ul {
+    margin: 0;
+    padding: 0;
+}
+
+.extension-area .fa-ul li {
+    margin: 0 0 10px;
+    padding: 0;
+}
+
+.extension-area .fa-ul li i {
+    transition: all 0.3s ease 0s;
+}
+
+
+/*----------------------------------------*/
+
+
+/*  7. Counter CSS
+/*----------------------------------------*/
+
+.counter-area {
+    background-size: cover !important;
+    position: relative;
+    z-index: 0;
 }
 
 .counter-area::before {
@@ -199,21 +566,51 @@ body {
     width: 100%;
 }
 
+.counter-area .counter-info {
+    color: #333;
+    padding: 80px 0;
+    position: relative;
+    text-align: center;
+}
+
+.counter-info .fcount {
+    font-family: Raleway;
+    font-size: 46px;
+    font-weight: 700;
+    position: relative;
+}
+
+.counter-info h3 {
+    color: #333;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+
+.counter-info .fcount::before {
+    background: #f96d55 none repeat scroll 0 0;
+    content: "";
+    display: block;
+    height: 45px;
+    left: -35px;
+    margin: 0 auto;
+    position: absolute;
+    top: 10px;
+    width: 5px;
+}
+
+
+/*----------------------------------------*/
+
+
+/*  8. Team CSS
+/*----------------------------------------*/
+
 .team-area,
 .contact-area {
     background: #f8f8f8 none repeat scroll 0 0;
-}
-
-.section-padding {
-    padding: 80px 0;
-}
-
-body {
-    color: #444;
-    font-family: sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
 }
 
 .team-members {
@@ -223,8 +620,1378 @@ body {
     text-align: center;
 }
 
-ul {
-    list-style: outside none none;
+.member-content .member-name a {
+    color: #404244;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.member-content .position-title {
+    text-transform: capitalize;
+}
+
+.member-content .practice {
+    color: #f96d55;
+    margin: 20px 0 5px;
+    text-transform: capitalize;
+}
+
+.member-content .member-description {
+    padding: 0 15px;
+}
+
+.team-members .member-widget {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.team-members .member-widget ul {
     margin: 0;
     padding: 0;
+}
+
+.team-members .member-widget ul li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0 10px;
+}
+
+.team-members .member-widget ul li a {
+    color: #65686b;
+    text-decoration: none;
+}
+
+
+/*----------------------------------------*/
+
+
+/*  9. Blog CSS
+/*----------------------------------------*/
+
+.clear-both {
+    clear: both;
+}
+
+.single-blog .blog-content .header-left a.title {
+    display: block;
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 22px;
+    padding: 0 0 5px;
+    text-decoration: none;
+    color: #404244;
+}
+
+.single-blog .blog-content .header-left-footer {
+    color: #404244;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 18px;
+}
+
+.single-blog .header-right {
+    margin-bottom: 5px;
+    text-align: center;
+    width: 45px;
+}
+
+.single-blog .header-right .blog-month {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: #f96d55 none repeat scroll 0 0;
+    border-color: #f96d55 #f96d55 -moz-use-text-color;
+    border-image: none;
+    border-style: solid solid none;
+    border-width: 1px 1px 0;
+    color: #ffffff;
+    display: block;
+}
+
+.single-blog .header-right .blog-day {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: #ffffff none repeat scroll 0 0;
+    border-color: -moz-use-text-color #ddd #ddd;
+    border-image: none;
+    border-style: none solid solid;
+    border-width: 0 1px 1px;
+    display: block;
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 2em;
+}
+
+.single-blog .blog-footer .footer-left a {
+    background: #f96d55 none repeat scroll 0 0;
+    border-radius: 30px;
+    color: #ffffff;
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.single-blog .blog-footer .footer-left a:hover,
+.btn-primary:hover {
+    background: #404244 none repeat scroll 0 0;
+}
+
+.single-blog .blog-footer .footer-right a {
+    font-size: 13px;
+}
+
+.single-blog {
+    overflow: hidden;
+}
+
+
+/*----------------------------------------*/
+
+
+/*  10. Contact CSS
+/*----------------------------------------*/
+
+.contact-area .contact-innder input[type="text"],
+.contact-area .contact-inner input[type="email"] {
+    box-shadow: none;
+    width: 100%;
+    height: 50px;
+}
+
+.contact-area .contact-inner input[type="text"]:focus,
+.contact-area .contact-inner input[type="email"]:focus,
+select:focus,
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.inputbox:focus {
+    border-color: #f96d55;
+}
+
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.inputbox {
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #555555;
+    display: block;
+    font-size: 14px;
+    height: 50px;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    width: 100%;
+}
+
+.contact-area .contact-innder textarea#message {
+    height: 150px;
+    resize: none;
+    width: 100%;
+}
+
+.contact-area .pad,
+.form-group,
+p.comment-note {
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background: #f96d55 none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 30px;
+    box-shadow: none;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 14px 26px;
+    transition: all 0.3s ease 0s;
+}
+
+
+/*----------------------------------------*/
+
+
+/*  11. Footer-Top CSS
+/*----------------------------------------*/
+
+.footer-top-area p {
+    color: #d6d6d6;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+}
+
+.footer-top-area {
+    background: #1d1c1c none repeat scroll 0 0;
+    padding: 40px 0;
+}
+
+.left-footer-content {
+    margin: 10px 0 20px;
+}
+
+.left-footer-social {
+    margin-bottom: 10px;
+}
+
+.left-footer-social .top-social li {
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+
+.left-footer-social .top-social li a {
+    color: #d6d6d6;
+}
+
+.left-footer-social .top-social li a i {
+    background: #3e3c3c none repeat scroll 0 0;
+    border-radius: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    width: 40px;
+}
+
+.left-footer-social .top-social li a i:hover {
+    background: #292929 none repeat scroll 0 0;
+    color: #ffffff;
+}
+
+.footer-title {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 46px;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.business-inner .business-hour ul li {
+    line-height: 24px;
+    font-family: raleway;
+    color: #fff;
+}
+
+.business-hour b {
+    float: right;
+    font-weight: 300;
+    margin-right: 22px;
+}
+
+.contact-address {
+    color: #d6d6d6;
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.contact-address a {
+    color: #fff;
+}
+
+.business-inner,
+.footer-contact {
+    margin: 10px 0;
+}
+
+
+/*----------------------------------------*/
+
+
+/*  12. Footer CSS
+/*----------------------------------------*/
+
+.footer-area {
+    background: #111111 none repeat scroll 0 0;
+    color: #d6d6d6;
+    font-family: raleway;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    padding: 30px 0;
+}
+
+.footer-area a {
+    color: #d6d6d6;
+}
+
+.footer-area a:hover,
+ul.footer-menu li a:hover {
+    color: #f96d55;
+}
+
+ul.footer-menu li {
+    display: inline-block;
+    text-align: right;
+}
+
+ul.footer-menu li a {
+    color: #d6d6d6;
+    font-family: raleway;
+    letter-spacing: 0.02em;
+    padding: 10px 15px;
+}
+
+.footer-area p,
+span.tag-items,
+.grid figure h2,
+.grid figure p,
+.service-quote > p {
+    margin: 0;
+}
+
+
+/*----------------------------------------*/
+
+
+/*  13. About page CSS
+/*----------------------------------------*/
+
+.section-padding2 {
+    padding: 60px 0;
+}
+
+.nav-helper-area {
+    padding: 20px 0;
+    color: #555;
+}
+
+.breadcrumb {
+    background-color: transparent;
+    border-radius: 4px;
+    list-style: outside none none;
+    margin-bottom: 0;
+    padding: 8px 0;
+}
+
+.artical-title {
+    font-size: 40px;
+}
+
+.artical-stats {
+    font-size: 26px;
+}
+
+.breadcrumb > .active + li::before {
+    content: "";
+    padding: 0;
+}
+
+
+/*----------------------------------------*/
+
+
+/*  14. Services page CSS
+/*----------------------------------------*/
+
+.services-image img {
+    margin-bottom: 40px;
+}
+
+
+/*----------------------------------------*/
+
+
+/*  15. Attonrney page CSS
+/*----------------------------------------*/
+
+.attorney-title {
+    border-bottom: 1px solid #ddd;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.contact-info-box {
+    clear: both;
+    float: left;
+    margin: 15px 0 25px;
+}
+
+.contact-info-box i {
+    border: 1px solid #404244;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-size: 30px;
+    height: 50px;
+    line-height: 48px;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    width: 50px;
+}
+
+.contact-info-box p {
+    float: left;
+    margin-left: 25px;
+}
+
+.attorney-image {
+    margin-bottom: 20px;
+}
+
+
+/*----------------------------------------*/
+
+
+/*  16. Price list page CSS
+/*----------------------------------------*/
+
+.section-padding3 {
+    padding: 70px 0;
+}
+
+.price-box {
+    border: 1px solid #ebebeb;
+    float: left;
+    font-family: Raleway;
+    text-align: center;
+    width: 100%;
+}
+
+.price-box .price-title {
+    background: #f96d55 none repeat scroll 0 0;
+    border-bottom: 0 none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.price-box .price-rate {
+    background: #555 none repeat scroll 0 0;
+    border-bottom: 1px solid #ebebeb;
+    color: #ffffff;
+    float: left;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    width: 100%;
+}
+
+.price-box .price-rate .p {
+    float: left;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 71.43px;
+    text-align: center;
+    width: 100%;
+}
+
+.price-box ul {
+    float: left;
+    width: 100%;
+}
+
+.price-box ul li {
+    border-bottom: 1px solid #e3e3e3;
+    font-size: 13px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.price-box ul li h4 {
+    font-weight: 400;
+}
+
+.price-box ul li.footer {
+    background: #fff none repeat scroll 0 0;
+    float: left;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+.btn-price {
+    background: #ffffff none repeat scroll 0 0;
+    border: 2px solid #404244;
+    color: #404244;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 9px 30px;
+    text-transform: uppercase;
+}
+
+.btn-price:hover {
+    background: #f96d55 none repeat scroll 0 0;
+    border: 2px solid #f96d55;
+    color: #ffffff;
+}
+
+
+/*----------------------------------------*/
+
+
+/*  17. Faq-page CSS
+/*----------------------------------------*/
+
+.faq-title {
+    font-size: 36px;
+}
+
+.panel-default > .panel-heading {
+    background-color: #fff;
+}
+
+.panel-default > .panel-heading h4 {
+    border-radius: 0;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 !important;
+    position: relative;
+    text-transform: capitalize;
+}
+
+.panel-title a {
+    display: block;
+    position: relative;
+    color: #f96d55;
+}
+
+.panel-title a::after {
+    content: "ï„„";
+    display: inline-block;
+    float: right;
+    font: 22px/25px fontawesome;
+    margin: 0 10px 0 0;
+    text-shadow: none;
+}
+
+.panel-title a.collapsed::after {
+    content: "ï„‡";
+    float: right;
+    font: 22px/25px fontawesome;
+    margin: 0 7px 0 0;
+}
+
+.panel-default > .panel-heading {
+    padding: 20px;
+}
+
+.panel-title a.collapsed {
+    color: #404244;
+}
+
+.panel-group .panel-heading + .panel-collapse > .panel-body {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color #c5c5c5 #c5c5c5;
+    border-image: none;
+    border-style: none solid solid;
+    border-width: 0;
+    display: block;
+    padding: 15px 0 15px 50px;
+}
+
+.panel-group .panel {
+    border: 1px solid #c5c5c5;
+    border-radius: 0;
+    margin-bottom: 10px;
+}
+
+
+/*----------------------------------------*/
+
+
+/*  18. Attorneys Style 1 CSS
+/*----------------------------------------*/
+
+.team-area.attorneys-style-1 {
+    background: #fff none repeat scroll 0 0;
+}
+
+
+/*----------------------------------------*/
+
+
+/*  19. Attorneys Style 2 CSS
+/*----------------------------------------*/
+
+.atton-box .image-circle {
+    background: #fff none repeat scroll 0 0;
+    border: 5px solid #eee;
+    border-radius: 100%;
+    height: 160px;
+    margin-bottom: 14px;
+    margin-top: -80px;
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+    width: 160px;
+}
+
+.atton-box {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #eee;
+    margin-top: 80px;
+    padding-bottom: 1px;
+    text-align: center;
+    width: 100%;
+}
+
+.atton-box .team-box {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #eee;
+    margin-left: -3px;
+    margin-top: -3px;
+    padding-bottom: 40px;
+    transition: all 0.3s ease 0s;
+    width: 100.8%;
+}
+
+.atton-box .team-box h4.member-name {
+    color: #f96d55;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+    margin-bottom: 16px;
+}
+
+.atton-box .team-box h5 {
+    color: #1e1e1e;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.atton-box .team-box p {
+    font-size: 13px;
+    margin: 14px auto 28px;
+    width: 80%;
+}
+
+.btn-team {
+    background: #131313 none repeat scroll 0 0;
+    border: 1px solid #e3e3e3;
+    border-radius: 3px;
+    color: #ffffff;
+    font-size: 13px;
+    padding: 9px 23px;
+    transition: all 0.3s ease 0s;
+    white-space: nowrap;
+}
+
+.atton-box .team-box:hover {
+    background: #eee none repeat scroll 0 0;
+}
+
+.btn-team:hover {
+    background: #f96d55 none repeat scroll 0 0;
+    color: #ffffff;
+}
+
+.btn-team:focus,
+h2.portfolio-title a {
+    color: #ffffff;
+}
+
+
+/*----------------------------------------*/
+
+
+/*  20. Attorneys Style 3 CSS
+/*----------------------------------------*/
+
+.single-attorney {
+    background: #1e1e1e none repeat scroll 0 0;
+}
+
+.single-attorney .attorney-content {
+    padding: 30px 0 0 35px;
+}
+
+.single-attorney h4 {
+    color: #ffffff;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.single-attorney h5 {
+    color: #ffffff;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.single-attorney .btn-attorney {
+    background: #f96d55 none repeat scroll 0 0;
+    border-radius: 3px;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 7px 18px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+}
+
+.single-attorney .btn-attorney:hover {
+    background: #454545 none repeat scroll 0 0;
+}
+
+.first-row {
+    margin-bottom: 60px;
+}
+
+
+/*----------------------------------------*/
+
+
+/*  21. Practice page CSS
+/*----------------------------------------*/
+
+.portfolio_menu {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.portfolio_menu li {
+    background: #ffffff none repeat scroll 0 0;
+    border: 1px solid #dddddd;
+    border-radius: 30px;
+    color: #999999;
+    cursor: pointer;
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0;
+    padding: 8px 16px;
+}
+
+.portfolio_menu li.active {
+    background: #f96d55 none repeat scroll 0 0;
+    border: 1px solid #f96d55;
+    color: #fff;
+}
+
+figure.effect-roxy img {
+    max-width: none;
+    transform: translate3d(-50px, 0px, 0px);
+    transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
+    width: calc(100% + 60px);
+}
+
+.grid figure img {
+    display: block;
+    max-width: 100%;
+    min-height: 100%;
+    opacity: 0.8;
+    position: relative;
+}
+
+.single-item {
+    float: left;
+    position: relative;
+    width: 33%;
+}
+
+figure.effect-roxy img {
+    max-width: none;
+    transform: translate3d(-50px, 0px, 0px);
+    transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
+    width: calc(100% + 60px);
+}
+
+figure.effect-roxy {
+    background: rgba(0, 0, 0, 0.9) none repeat scroll 0 0;
+}
+
+.grid figure {
+    float: left;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+figure.effect-roxy:hover img {
+    opacity: 0.7;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+figure.effect-roxy figcaption::before {
+    bottom: 20px;
+    content: "";
+    left: 20px;
+    opacity: 0;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    transform: translate3d(-20px, 0px, 0px);
+    transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
+}
+
+figure.effect-roxy figcaption {
+    padding: 3em;
+    text-align: left;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+    cursor: pointer;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+figure.effect-roxy figcaption::before {
+    border: 2px solid #ffffff;
+}
+
+figure.effect-roxy:hover figcaption::before,
+figure.effect-roxy:hover p {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+figure.effect-roxy:hover p a {
+    color: #ffffff;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.grid figure p {
+    font-size: 68.5%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+figure.effect-roxy:hover h2 {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+figure.effect-roxy h2 {
+    opacity: 0;
+    padding: 30% 0 10px;
+    transform: translate3d(10px, 0px, 0px);
+    transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
+}
+
+.grid figure h2 {
+    color: #fff;
+    font-size: 22px;
+    text-transform: capitalize;
+    word-spacing: -0.15em;
+}
+
+figure.effect-roxy p {
+    opacity: 0;
+    transform: translate3d(-10px, 0px, 0px);
+    transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
+}
+
+
+/*----------------------------------------*/
+
+
+/*  21.1 Practice Area Style 2 CSS
+/*----------------------------------------*/
+
+.portfolio-image {
+    position: relative;
+}
+
+.portfolio-effect {
+    background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+    bottom: 0;
+    height: 0;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all 0.2s ease 0s;
+    width: 0;
+}
+
+.portfolio2-inner:hover .portfolio-effect {
+    height: 100%;
+    opacity: 1;
+    width: 100%;
+}
+
+.portfolio-content {
+    box-sizing: border-box;
+    padding: 15px;
+    color: #fff;
+}
+
+.portfolio-title {
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+.content-text {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.portfolio-tag {
+    background: #000 none repeat scroll 0 0;
+    bottom: 0;
+    color: #fff;
+    left: 0;
+    list-style: outside none none;
+    padding: 8px 10px;
+    position: absolute;
+    right: 0;
+}
+
+.portfolio-content.overlay-mode {
+    bottom: 0;
+    height: 0;
+    left: 0;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    visibility: hidden;
+}
+
+.portfolio2-inner:hover .portfolio-content.overlay-mode {
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+
+.overlay-mode .content-text,
+.overlay-mode .portfolio-content-link {
+    opacity: 0;
+    transition: opacity 0.3s ease 0.6s;
+}
+
+.portfolio2-inner:hover .overlay-mode .content-text,
+.portfolio2-inner:hover .overlay-mode .portfolio-content-link {
+    opacity: 1;
+}
+
+.overlay-mode .portfolio-title {
+    margin-top: -5px;
+    opacity: 0;
+    transition: all 0.2s ease 0.2s;
+}
+
+.portfolio2-inner:hover .overlay-mode .portfolio-title {
+    margin-top: 0;
+    opacity: 1;
+}
+
+.overlay-mode .portfolio-tag {
+    opacity: 0;
+    transition: opacity 0.3s ease 0.9s;
+}
+
+.portfolio2-inner:hover .overlay-mode .portfolio-tag {
+    opacity: 1;
+}
+
+
+/*----------------------------------------*/
+
+
+/*  22. Blog Page CSS
+/*----------------------------------------*/
+
+.blog-title a {
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+.blog-header a {
+    color: #5c5c5c;
+}
+
+.blog-header a:hover {
+    color: #f62e0b;
+}
+
+.blog-header i {
+    margin-right: 5px;
+    color: #f96d55;
+}
+
+.blog-header span {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.blog-header ul.tag-items li {
+    display: inline-block;
+    padding: 0 4px 0 0;
+    text-align: center;
+}
+
+.blog-header ul.tag-items {
+    display: inline;
+}
+
+.blog-widget h2.widget-title {
+    border-bottom: 1px solid #c5c5c5;
+    line-height: 30px;
+    margin: 0 0 20px;
+    padding-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.cate-widget-list ul li {
+    border-bottom: 1px dashed #cecece;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+    transition: all 400ms ease 0s;
+}
+
+.cate-widget-list ul li::before {
+    content: "ï„";
+    font-family: FontAwesome;
+    font-size: 14px;
+    left: 0;
+    line-height: 8px;
+    position: absolute;
+    top: 6px;
+}
+
+.cate-widget-list ul li a .cat-titel {
+    color: #323232;
+    padding-right: 4px;
+}
+
+.cate-widget-list ul li a .cat-count {
+    background: #eb2c33 none repeat scroll 0 0;
+    border-radius: 4px;
+    color: #fff;
+    display: inline-block;
+    font-size: 10px;
+    height: 20px;
+    line-height: 20px;
+    margin-left: 20px;
+    text-align: center;
+    width: 20px;
+}
+
+.cate-widget-list ul li a:hover .cat-titel {
+    color: #f62e0b;
+    text-decoration: underline;
+}
+
+.widget-margin {
+    margin-bottom: 20px;
+}
+
+.media-list img {
+    height: 75px;
+    margin-right: 20px;
+    width: 130px;
+}
+
+a.media-body-title {
+    color: #323232;
+    display: block;
+    font-size: 16px;
+}
+
+.media-author a {
+    color: #959595;
+}
+
+.media-author {
+    display: inline-block;
+}
+
+.media-date-created {
+    color: #959595;
+    display: inline;
+}
+
+a.media-body-title:hover {
+    color: #f96d55;
+    text-decoration: underline;
+}
+
+.media-author a:hover {
+    color: #959595;
+    text-decoration: underline;
+}
+
+.media-list {
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.media-list:last-child {
+    margin-bottom: 0;
+}
+
+.tag-list a {
+    background: #f2f2f2 none repeat scroll 0 0;
+    border-radius: 2px;
+    color: #6a6a6a;
+    display: block;
+    float: left;
+    font-size: 14px !important;
+    margin: 0 5px 5px 0;
+    padding: 5px 8px;
+    transition: all 400ms ease 0s;
+}
+
+.tag-list a:hover {
+    background: #f96d55 none repeat scroll 0 0;
+    color: #ffffff;
+}
+
+.blog-inner {
+    margin-bottom: 40px;
+}
+
+.blog-inner:last-child {
+    margin-bottom: 0;
+}
+
+.blog-image {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.blog-image img {
+    border-radius: 4px;
+}
+
+.blog-image i {
+    background: #ffffff none repeat scroll 0 0;
+    border-radius: 4px;
+    color: #f96d55;
+    font-size: 16px;
+    height: 42px;
+    line-height: 42px;
+    margin-left: -21px;
+    margin-top: -21px;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    vertical-align: middle;
+    width: 42px;
+    z-index: 1;
+}
+
+.blog-image:hover i {
+    left: 50%;
+    opacity: 1;
+    top: 50%;
+    transition: all 200ms ease-in 0s;
+}
+
+.blog-overlay {
+    background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    visibility: visible;
+    width: 100%;
+}
+
+.blog-image:hover .blog-overlay {
+    opacity: 1;
+    transition: all 500ms ease-out 0s;
+}
+
+
+/*----------------------------------------*/
+
+
+/*  23. Single Item Page CSS
+/*----------------------------------------*/
+
+.single-item-header i {
+    color: #999999;
+}
+
+.single-item-header a:hover {
+    color: #5c5c5c;
+}
+
+.single-item-footer {
+    border-bottom: 1px solid #f5f5f5;
+    border-top: 1px solid #f5f5f5;
+    display: block;
+    margin: 16px 0 4px;
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+span.item-preview {
+    border-right: 1px solid #f5f5f5;
+    color: #959595;
+    padding-right: 15px;
+}
+
+.footer-bottom h3 {
+    font-size: 36px;
+    font-weight: 300;
+    padding: 50px 0 0;
+}
+
+h3.item-comment-counter {
+    font-size: 36px;
+}
+
+.form-group .inputbox:focus {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
+    border-color: #66afe9;
+}
+
+.form-group input.inputbox {
+    height: 32px;
+}
+
+.form-group textarea.inputbox {
+    width: 100%;
+    height: 190px;
+}
+
+.comment-area {
+    padding: 16px;
+}
+
+.comment-area .btn-secondary {
+    font-size: 16px;
+}
+
+
+/*----------------------------------------*/
+
+
+/*  24. Tag Item Page CSS
+/*----------------------------------------*/
+
+.tag-header h2.tag-title {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.tag-header a:hover,
+.blog-header a:hover,
+.contact-address-widget a:hover,
+.breadcrumb li a:hover,
+a.portfolio-content-link:hover,
+.contact-info-box a:hover {
+    text-decoration: underline;
+}
+
+.blog-title.blog-border > a:hover {
+    text-decoration: none;
+}
+
+.tag-category {
+    display: inline;
+    margin: 0 10px;
+}
+
+.blog-body {
+    padding: 10px 0 25px;
+}
+
+.blog-border {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 0 0 20px;
+}
+
+
+/*----------------------------------------*/
+
+
+/*  25. Contact Page CSS
+/*----------------------------------------*/
+
+.contact-page-inner {
+    padding: 40px 0;
+}
+
+.contact-page-inner input {
+    height: 42px;
+}
+
+.contact-page-inner textarea {
+    height: 200px;
+}
+
+.contact-content {
+    border-bottom: 1px solid #e5e5e5;
+    color: #333333;
+    font-size: 16px;
+}
+
+.contact-page-inner .form-group input:focus,
+.contact-page-inner .form-group textarea:focus {
+    border-color: #66afe9;
+}
+
+.contact-page-inner label {
+    font-weight: 400;
+}
+
+.star {
+    color: #ffcc00;
+}
+
+.contact-page-inner input[type=checkbox] {
+    height: 0;
+}
+
+.btn-secondary {
+    background-color: #f96d55;
+    border-color: #f8583c;
+    color: #ffffff;
+}
+
+.btn-secondary:hover {
+    background-color: #f74324;
+    border-color: #ef2a08;
+    color: #ffffff;
 }

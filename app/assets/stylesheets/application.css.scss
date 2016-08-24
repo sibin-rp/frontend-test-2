@@ -1,11 +1,19 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome";
-@import "home";
+@import "main";
+@import "_servicestyle.scss";
 @import "price";
 @import "contact";
 @import "counter";
 @import "style";
+@import "nivo-slider";
+@import "default";
+@import "animate";
 @import "nivo-slider.css";
 @import "teamstyle";
+
+
+@import "about";
+@import "home";
 

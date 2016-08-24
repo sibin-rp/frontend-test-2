@@ -14,19 +14,23 @@ Rails.application.routes.draw do
 
   root 'home#index'
 
+  get 'about', to:'home#about'
+
+  get 'home/contact', to:'home#contact'
+
+  get 'home/price', to:'home#price'
+
+  get 'home/index', to:'home#index'
+
+  
 
 
-  get 'home/index'
 
-  get 'home/about'
+  
 
-  get 'home/price'
+  get 'service', to:'home#service'
 
-  get 'home/contact'
-
-  get 'home/service'
-
-  get 'home/blog'
+  get 'blog', to:'home#blog'
 
   get 'home/blog/:id/show', to:'home#blog_index'
 
