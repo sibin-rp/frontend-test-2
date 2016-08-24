@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   end
 
   root 'home#index'
+ 
 
   get 'about', to:'home#about'
 
@@ -21,6 +22,11 @@ Rails.application.routes.draw do
   get 'home/price', to:'home#price'
 
   get 'home/index', to:'home#index'
+
+  get '/index', to: 'home#index'
+
+ 
+
 
   
 
@@ -37,12 +43,22 @@ Rails.application.routes.draw do
 
   get 'home/singlepractice'
 
+
+
   
 
   get 'blog', to:'home#blog'
 
 
-  get 'home/blog/:id/show', to:'home#blog_index'
+  
+
+
+
+  get '/tag-page', to:'home#tag-page'
+  
+  get '/single-item', to:'home#single-item'
+
+
 
   get 'home/teams'
 
