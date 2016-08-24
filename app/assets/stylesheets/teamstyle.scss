@@ -26,7 +26,7 @@ body {
  background: transparent url('img/nav-helper.png') repeat scroll 0 0;
  }
 
- %in{
+ .in{
      color: $fc;
  }
 
@@ -45,7 +45,7 @@ font-size: 15px;
  }
 
  .area{
-     @extend %in;
+      color: $fc;
      margin: 20px 0 5px;
  }
 
