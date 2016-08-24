@@ -1,2 +1,63 @@
 
-.pid{font-style: italic;}
+
+
+$bc:white;
+$fc:#f96d55;
+$mc:#404244;
+$hv:#eaeae1;
+$ff: raleway;
+
+body {
+  background: $bc;
+}
+
+
+.pid
+{
+    font-style: italic;
+    }
+
+.member-content:hover{
+    background-color: $hv;
+
+}
+
+ .nav-helper-area{
+ background: transparent url('img/nav-helper.png') repeat scroll 0 0;
+ }
+
+ %in{
+     color: $fc;
+ }
+
+ .info{font-family: $ff;
+     font-size: 20px;
+ }
+
+ .member{
+     color: $mc;
+     font-family:$ff;
+     font-size: 20px;
+ }
+
+ .pos{
+font-size: 15px;
+ }
+
+ .area{
+     @extend %in;
+     margin: 20px 0 5px;
+ }
+
+ .cont{
+     line-height: 1.8;
+ }
+
+ @mixin webfont(){
+     font-family: $ff;
+     font-size: 30px;
+ }
+
+ .name{
+     @include webfont();
+ }
