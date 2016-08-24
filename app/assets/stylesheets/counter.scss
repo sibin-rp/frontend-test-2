@@ -3,6 +3,9 @@ $counter_text: #333;
   background-size: cover !important;
   position: relative;
   z-index: 0;
+margin-top: 50px;
+
+margin-bottom: 50px;
 }
 .counter-area::before {
   background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0;
