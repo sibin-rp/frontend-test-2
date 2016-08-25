@@ -10,13 +10,17 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+
 //= require jquery
 //= require jquery_ujs
-//= require home
-//= require service
+//= require jquery.mixitup
 //= require jquery.nivo.slider
 //= require jquery.nivo.slider.pack
+
+//= require home
+//= require service
 //= require home
 //= require map
 //= require chart
 //= require wow
+//= require mixitup
