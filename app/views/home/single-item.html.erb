@@ -58,71 +58,80 @@
                         <p></p>
                         <p>In ruby we need to make something countable into an enumerator object, which is done by applying .each and .map on it.
 
-<pre>
-1. [].each
-2. [1, 3, 4].each
-3. file.each
-4. {}.each
-</pre>
-Ruby has a wide range of operations we can do over a collection, its one of those features that makes Ruby such a powerful dynamic language. An enumerator can be used to generate series like the Fibonacci series.</p>
-                        <p>
-<pre>
-1. fib = Enumerator.new do |y|
-2. a = b = 1
-3. loop do
-4. y << a
-5. a, b = b, a + b
-6. end
-7. end
-</pre>
-But when we do a .map / .each with a code block, then it would try to realize the enumerator fully and then apply the block over it.
+                    <pre><code class="language-ruby">
+                    1. [].each
+                    2. [1, 3, 4].each
+                    3. file.each
+                    4. {}.each
+                    </code>
+                    </pre>
+                    Ruby has a wide range of operations we can do over a collection, its one of those features that makes Ruby such a powerful dynamic language. An enumerator can be used to generate series like the Fibonacci series.</p>
+                    <p>
+                    <pre><code class="language-ruby">
+                    1. fib = Enumerator.new do |y|
+                    2. a = b = 1
+                    3. loop do
+                    4. y << a
+                    5. a, b = b, a + b
+                    6. end
+                    7. end
+                    </code>
+                    </pre>
+                    But when we do a .map / .each with a code block, then it would try to realize the enumerator fully and then apply the block over it.
 
-That would be fine when we are working on something small like:
+                    That would be fine when we are working on something small like:
 
-<pre>
-1. [1,2,3].map { |i| i*i }
-</pre>
+                    <pre><code class="language-ruby">
+                    1. [1,2,3].map { |i| i*i }
+                    </code>
+                    </pre>
 
-But when we take the above fib enumerator, which will grow into an infinite series, adding a .map would lead the code to an infinite loop. If you are crazy enough to write an infinite loop, feel free to run the below code.
-
-
-<pre>
-1. foo.map { |i| i * * }
-</pre>
-When we try to use these operations on a huge 10 GB file,there it makes your program realize the entire file is close to impossible. So this is the case where the lazy enumerator comes to place. It would ask ruby to defer the realization of the enumerator until it is required, and not before you run your operation.
-
-So with respect to the above Fibonacci enumerator, you should change the code to as below.
+                    But when we take the above fib enumerator, which will grow into an infinite series, adding a .map would lead the code to an infinite loop. If you are crazy enough to write an infinite loop, feel free to run the below code.
 
 
-}
-<pre>
-1. foo.lazy.map { |i| i * i }
-</pre>
-So now, the program is ready, all good it would run fast. But it won’t execute them until you call or access those elements. So only when we do foo.lazy.map { |i| i* i }. First the first element is calculated and given to us. Like wise if you want the first 10 elements of the fibonacci series then you have to do foo.lazy.map { |i| i* i }.take(1o).to_a
+                    <pre><code class="language-ruby">
+                    1. foo.map { |i| i * * }
+                    </code>
+                    </pre>
+                    When we try to use these operations on a huge 10 GB file,there it makes your program realize the entire file is close to impossible. So this is the case where the lazy enumerator comes to place. It would ask ruby to defer the realization of the enumerator until it is required, and not before you run your operation.
 
-To do the  same with the files, as a file is a collection of lines, follow the below code snippets:
-
-
-<pre>
-1. fille = File.open('OurHugeFile.log')
-</pre>
-get the first three lines, lazily:
-
-<pre>
-1. file.each_line.lazy.take(3).to_a
-</pre>
-get the firs two lines with word “INFO”
-
-<pre>1. <span class="n">file</span><span class="o">.</span><span class="n">each_line</span><span class="o">.</span><span class="n">lazy</span><span class="o">.</span><span class="n">select</span> <span class="p">{</span> <span class="o">|</span><span class="n">line</span><span class="o">|</span> <span class="n">line</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="sr">/INFO/</span><span class="p">)</span> <span class="p">}</span><span class="o">.</span><span class="n">first</span><span class="p">(2)</span>
-</pre>
-So if you want to print something with line numbers, just do a map from the lazy.
+                    So with respect to the above Fibonacci enumerator, you should change the code to as below.
 
 
-<pre>
-1. file.each_line.lazy.each_with_index.map { |l, i| "#{i}: #{l}" }.select { |i| match(/INFO/) }.first(3)
-</pre>
-If you have anything more to add to this, kindly comment below.
-</p>
+                    }
+                    <pre><code class="language-ruby">
+                    1. foo.lazy.map { |i| i * i }
+                    </code>
+                    </pre>
+                    So now, the program is ready, all good it would run fast. But it won’t execute them until you call or access those elements. So only when we do foo.lazy.map { |i| i* i }. First the first element is calculated and given to us. Like wise if you want the first 10 elements of the fibonacci series then you have to do foo.lazy.map { |i| i* i }.take(1o).to_a
+
+                    To do the  same with the files, as a file is a collection of lines, follow the below code snippets:
+
+
+                    <pre><code class="language-ruby">
+                    1. fille = File.open('OurHugeFile.log')
+                    </code>
+                    </pre>
+                    get the first three lines, lazily:
+
+                    <pre><code class="language-ruby">
+                    1. file.each_line.lazy.take(3).to_a
+                    </code>
+                    </pre>
+                    get the firs two lines with word “INFO”
+
+                    <pre><code class="language-ruby">
+                    1. <span class="n">file</span><span class="o">.</span><span class="n">each_line</span><span class="o">.</span><span class="n">lazy</span><span class="o">.</span><span class="n">select</span> <span class="p">{</span> <span class="o">|</span><span class="n">line</span><span class="o">|</span> <span class="n">line</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="sr">/INFO/</span><span class="p">)</span> <span class="p">}</span><span class="o">.</span><span class="n">first</span><span class="p">(2)</span>
+                    </code></pre>
+                    So if you want to print something with line numbers, just do a map from the lazy.
+
+
+                    <pre><code class="language-ruby">
+                    1. file.each_line.lazy.each_with_index.map { |l, i| "#{i}: #{l}" }.select { |i| match(/INFO/) }.first(3)
+                    </code>
+                    </pre>
+                    If you have anything more to add to this, kindly comment below.
+                    </p>
                     </div>
                     <div class="single-item-footer">
                         <span class="item-preview">Read 238 times</span>

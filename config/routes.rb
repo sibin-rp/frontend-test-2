@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   end
 
   root 'home#index'
- 
+
 
   get 'home/about', to:'home#about'
 
@@ -25,44 +25,43 @@ Rails.application.routes.draw do
 
   get '/index', to: 'home#index'
 
- 
-
-
-  
 
 
 
-  
+
+
+
+
+
 
   get 'service', to:'home#service'
 
+  get 'practicestyle1', to:'home#practicestyle1'
 
-  get 'home/practicestyle1'
+  get 'practicestyle2', to:'home#practicestyle2'
 
-  get 'home/practicestyle2'
-
-  get 'home/singlepractice'
-
+  get 'singlepractice', to:'home#singlepractice'
 
 
-  
-
-  get 'blog', to:'home#blog'
 
 
-  
+
+  get '/blog', to:'home#blog'
+  get 'home/blog', to:'home#blog'
+
+
 
 
 
   get '/tag-page', to:'home#tag-page'
-  
+  get 'home/tag-page', to:'home#tag-page'
   get '/single-item', to:'home#single-item'
+  get 'home/single-item', to:'home#single-item'
 
-
-
+  get '/teams', to:'home#teams'
   get 'home/teams', to:'home#teams'
 
- 
+
 
   get 'home/team_show'
 
