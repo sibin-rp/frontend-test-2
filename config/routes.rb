@@ -46,8 +46,8 @@ Rails.application.routes.draw do
 
 
 
-  get 'blog', to:'home#blog'
-
+  get '/blog', to:'home#blog'
+  get 'home/blog', to:'home#blog'
 
 
 
@@ -58,7 +58,7 @@ Rails.application.routes.draw do
   get '/single-item', to:'home#single-item'
 
 
-
+  get '/teams', to:'home#teams'
   get 'home/teams', to:'home#teams'
 
 
