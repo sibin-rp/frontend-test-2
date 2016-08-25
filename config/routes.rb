@@ -54,9 +54,9 @@ Rails.application.routes.draw do
 
 
   get '/tag-page', to:'home#tag-page'
-
+  get 'home/tag-page', to:'home#tag-page'
   get '/single-item', to:'home#single-item'
-
+  get 'home/single-item', to:'home#single-item'
 
   get '/teams', to:'home#teams'
   get 'home/teams', to:'home#teams'
