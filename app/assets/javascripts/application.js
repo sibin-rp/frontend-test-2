@@ -16,11 +16,12 @@
 //= require jquery.mixitup
 //= require jquery.nivo.slider
 //= require jquery.nivo.slider.pack
-
-//= require home
-//= require service
-//= require home
-//= require map
-//= require chart
+//= require jquery.waypoints.min
+//= require jquery.counterup.min
 //= require wow
 //= require mixitup
+//= require prism
+//= require service
+//= require map
+//= require chart
+//= require home

@@ -117,11 +117,6 @@ ul {
     padding: 0
 }
 
-pre {
-    background-color:black;
-    color: red;
-}
-
 h1,
 h2,
 h3,
@@ -559,13 +554,12 @@ h3.stats strong {
 /*----------------------------------------*/
 
 .counter-area {
-    background-size: cover !important;
+    background-size: cover;
     position: relative;
     z-index: 0;
 }
 
 .counter-area::before {
-    background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0;
     bottom: 0;
     content: "";
     display: block;
