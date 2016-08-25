@@ -17,7 +17,7 @@
 //= require jquery.nivo.slider
 //= require jquery.nivo.slider.pack
 //= require counterUp
-
+//= require prism
 //= require home
 //= require service
 //= require home
