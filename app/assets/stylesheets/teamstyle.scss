@@ -1,0 +1,128 @@
+
+
+
+$bc:white;
+$fc:#f96d55;
+$mc:#404244;
+$hv:#eaeae1;
+$ff: raleway;
+
+body {
+  background: $bc;
+}
+
+
+.pid
+{
+    font-style: italic;
+    }
+
+.member-content:hover{
+    background-color: $hv;
+
+}
+
+ .nav-helper-area{
+ background: transparent url('img/nav-helper.png') repeat scroll 0 0;
+  padding-bottom: 100px;
+ }
+
+ .in{
+     color: $fc;
+ }
+
+ .info{font-family: $ff;
+     font-size: 20px;
+ }
+
+ .member{
+     color: $mc;
+     font-family:$ff;
+     font-size: 20px;
+ }
+
+ .pos{
+font-size: 15px;
+ }
+
+ .area{
+      color: $fc;
+     margin: 20px 0 5px;
+ }
+
+ .cont{
+     line-height: 1.8;
+ }
+
+ @mixin webfont(){
+     font-family: $ff;
+     font-size: 30px;
+ }
+
+ .name{
+     @include webfont();
+ }
+
+
+
+
+
+
+.contact-info-box {
+    clear: both;
+    float: left;
+    margin: 15px 0 25px;
+    
+     i {
+    border: 1px solid #404244;
+    display: block;
+    float: left;
+    font-size: 30px;
+    height: 50px;
+    line-height: 48px;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    width: 50px;
+}
+
+
+p {
+    float: left;
+    margin-left: 25px;
+}
+
+}
+
+.faq{
+    padding-top:50px;
+}
+
+.fq{
+    padding-top: 50px;
+}
+
+.panel{
+    font-size:15px;
+}
+
+.panel-heading{
+    font-size:15px;
+}
+
+.faq-title{
+    font-size: 36px;
+}
+
+.t1{
+    padding-top:50px;
+    padding-left: 100px;
+}
+
+.t{
+     padding-top:50px;
+    padding-left: 100px;
+}
+
+.nav-helper-area{
+   
+}

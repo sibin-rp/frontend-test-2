@@ -1,0 +1,308 @@
+<div class="nav-helper-area" style="background: transparent url(<%= image_path'ronr.jpg'%>) repeat scroll 0 0">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li class="active">You are here: </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li> <span>Single item</span></li>
+        </ol>
+    </div>
+</div>
+
+<div class="tag-area section-padding3">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-xs-12 col-sm-8  col-md-8">
+                <div class="blog-inner">
+                    <div class="blog-image">
+                        <a href="<%= image_path'enum.png'%>" class="venobox">
+                            <img src="<%= image_path'enum.png'%>" alt="">
+                            <span class="blog-overlay"></span>
+                            <i class="fa fa-search-plus"></i>
+                        </a>
+                    </div>
+                    <div class="blog-header single-item-header">
+                        <h2 class="blog-title  blog-border">
+                                   Lazy enumerator to handle huge files
+                                </h2>
+                        <span class="blog-date-created">
+                                    <i class="fa fa-clock-o"></i>
+                                    Aug 12 2016
+                                </span>
+                        <span class="blog-author">
+                                    <i class="fa fa-user"></i>
+                                    <a href="#">Harishankar P.S</a>
+                                </span>
+                        <span class="blog-category">
+                                    <i class="fa fa-file"></i>
+                                    <a href="blog.html">Blog</a>
+                                </span>
+                        <span class="cate-item-tag-list">
+                                    <i class="fa fa-tags"></i>
+                                    <span class="tag-items">
+                                        <a href="tag-page.html">Enumerator</a>
+                                        <a href="tag-page.html">Huge Files</a>
+                                       
+                                    </span>
+                        </span>
+                        <span class="blog-comment">
+                                    <i class="fa fa-comments"></i>
+                                    <a href="single-item.html">0 comment</a>
+                                </span>
+                    </div>
+                    <div class="blog-body">
+                        <p>Lazy evaluation, or call-by-need is an evaluation strategy which delays the evaluation of an expression until its value is needed. Its frequently seen in functional languages, ruby introduced the lazy method in Ruby 2.0. For those who don’t know what are enumerators: enumerators are something that can be counted. So a collection of elements, files (file is an collection of lines of string), etc can be treated as an enumerator.</p>
+                    </div>
+                    <div class="item-full-text">
+                        <p></p>
+                        <p>In ruby we need to make something countable into an enumerator object, which is done by applying .each and .map on it.
+
+                    <pre><code class="language-ruby">
+                    1. [].each
+                    2. [1, 3, 4].each
+                    3. file.each
+                    4. {}.each
+                    </code>
+                    </pre>
+                    Ruby has a wide range of operations we can do over a collection, its one of those features that makes Ruby such a powerful dynamic language. An enumerator can be used to generate series like the Fibonacci series.</p>
+                    <p>
+                    <pre><code class="language-ruby">
+                    1. fib = Enumerator.new do |y|
+                    2. a = b = 1
+                    3. loop do
+                    4. y << a
+                    5. a, b = b, a + b
+                    6. end
+                    7. end
+                    </code>
+                    </pre>
+                    But when we do a .map / .each with a code block, then it would try to realize the enumerator fully and then apply the block over it.
+
+                    That would be fine when we are working on something small like:
+
+                    <pre><code class="language-ruby">
+                    1. [1,2,3].map { |i| i*i }
+                    </code>
+                    </pre>
+
+                    But when we take the above fib enumerator, which will grow into an infinite series, adding a .map would lead the code to an infinite loop. If you are crazy enough to write an infinite loop, feel free to run the below code.
+
+
+                    <pre><code class="language-ruby">
+                    1. foo.map { |i| i * * }
+                    </code>
+                    </pre>
+                    When we try to use these operations on a huge 10 GB file,there it makes your program realize the entire file is close to impossible. So this is the case where the lazy enumerator comes to place. It would ask ruby to defer the realization of the enumerator until it is required, and not before you run your operation.
+
+                    So with respect to the above Fibonacci enumerator, you should change the code to as below.
+
+
+                    }
+                    <pre><code class="language-ruby">
+                    1. foo.lazy.map { |i| i * i }
+                    </code>
+                    </pre>
+                    So now, the program is ready, all good it would run fast. But it won’t execute them until you call or access those elements. So only when we do foo.lazy.map { |i| i* i }. First the first element is calculated and given to us. Like wise if you want the first 10 elements of the fibonacci series then you have to do foo.lazy.map { |i| i* i }.take(1o).to_a
+
+                    To do the  same with the files, as a file is a collection of lines, follow the below code snippets:
+
+
+                    <pre><code class="language-ruby">
+                    1. fille = File.open('OurHugeFile.log')
+                    </code>
+                    </pre>
+                    get the first three lines, lazily:
+
+                    <pre><code class="language-ruby">
+                    1. file.each_line.lazy.take(3).to_a
+                    </code>
+                    </pre>
+                    get the firs two lines with word “INFO”
+
+                    <pre><code class="language-ruby">
+                    1. <span class="n">file</span><span class="o">.</span><span class="n">each_line</span><span class="o">.</span><span class="n">lazy</span><span class="o">.</span><span class="n">select</span> <span class="p">{</span> <span class="o">|</span><span class="n">line</span><span class="o">|</span> <span class="n">line</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="sr">/INFO/</span><span class="p">)</span> <span class="p">}</span><span class="o">.</span><span class="n">first</span><span class="p">(2)</span>
+                    </code></pre>
+                    So if you want to print something with line numbers, just do a map from the lazy.
+
+
+                    <pre><code class="language-ruby">
+                    1. file.each_line.lazy.each_with_index.map { |l, i| "#{i}: #{l}" }.select { |i| match(/INFO/) }.first(3)
+                    </code>
+                    </pre>
+                    If you have anything more to add to this, kindly comment below.
+                    </p>
+                    </div>
+                    <div class="single-item-footer">
+                        <span class="item-preview">Read 238 times</span>
+                    </div>
+                    <div class="footer-bottom">
+                        <h3>About The Author</h3>
+                    </div>
+                    <div class="comment-area">
+                        <h3 class="item-comment-counter">
+                                    Leave a comment
+                                </h3>
+                        <div class="item-comment-list">
+                            <p class="comment-note">Make sure you enter the (*) required information where indicated. HTML code is not allowed. </p>
+                            <form action="#">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label class="group-name">Name *</label>
+                                            <input type="text" onfocus="if(this.value=='enter your name...') this.value='';" onblur="if(this.value=='') this.value='enter your name...';" value="enter your name..." class="inputbox">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label class="group-name">Email *</label>
+                                            <input type="email" onfocus="if(this.value=='enter your e-mail...') this.value='';" onblur="if(this.value=='') this.value='enter your e-mail...';" value="enter your e-mail..." class="inputbox">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label class="group-url">Website URL</label>
+                                            <input type="text" onfocus="if(this.value=='enter your site URL...') this.value='';" onblur="if(this.value=='') this.value='enter your site URL...';" value="enter your site URL..." class="inputbox">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label class="form-comment">Message *</label>
+                                            <textarea onfocus="if(this.value=='enter your message here...') this.value='';" onblur="if(this.value=='') this.value='enter your message here...';" class="inputbox" rows="8">enter your message here...</textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="submit" value="Submit comment" class="btn btn-secondary">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
+            <div class="col-xs-12 col-sm-4  col-md-4">
+                <div class="blog-widget">
+                            <div class="categorie-widget widget-margin">
+								
+                                <h2 class="widget-title">Categories</h2>
+                                <div class="cate-widget-list">
+                                    <ul>
+                                        <li>
+                                            <a href="blog.html">
+                                                <span class="cat-titel">Ruby</span>
+                                                <span class="cat-count"> (3)</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="blog.html">
+                                                <span class="cat-titel">Blog</span>
+                                                <span class="cat-count"> (3)</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="blog.html">
+                                                <span class="cat-titel">News</span>
+                                                <span class="cat-count"> (0)</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="blog.html">
+                                                <span class="cat-titel">Rails</span>
+                                                <span class="cat-count"> (0)</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="blog.html">
+                                                <span class="cat-titel">JS</span>
+                                                <span class="cat-count"> (0)</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="blog.html">
+                                                <span class="cat-titel">Heroku</span>
+                                                <span class="cat-count"> (0)</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="artical-widget  widget-margin">
+								
+                                <h2 class="widget-title">Legal articles</h2>
+                                <div class="artical-widget-list">
+                                    <ul>
+									
+                                        <li class="media-list">
+                                            <a class="media-image pull-left" href="single-item.html" title="Continue reading">
+                                                <img src="<%= image_path'post.png'%>" alt="">
+                                            </a>
+                                            <div class="media-body">
+                                                <a href="#" class="media-body-title">
+                                                    Optimising PostgreSQL database query using indexes
+                                                </a>
+                                                <div class="media-author">
+                                                    <a href="#" title="Super User">Harishankar P.S</a>
+                                                </div>
+                                                <div class="media-date-created">
+                                                    11 August 2016	
+                                                </div>
+                                            </div>
+                                        </li>
+									
+                                        <li class="media-list">
+                                            <a class="media-image pull-left" href="single-item.html" title="Continue reading">
+                                                <img src="<%= image_path'enum.png'%>" alt="">
+                                            </a>
+                                            <div class="media-body">
+                                                <a href="#" class="media-body-title">
+                                                    Lazy enumerator to handle huge files
+                                                </a>
+                                                <div class="media-author">
+                                                    <a href="#" title="Super User">Harishankar P.S</a>
+                                                </div>
+                                                <div class="media-date-created">
+                                                    12 August 2016	
+                                                </div>
+                                            </div>
+                                        </li>
+										
+                                        <li class="media-list">
+                                            <a class="media-image pull-left" href="single-item.html" title="Continue reading">
+                                                <img src="<%= image_path'lpb.png'%>" alt="">
+                                            </a>
+                                            <div class="media-body">
+                                                <a href="#" class="media-body-title">
+                                                   Lambda vs Proc Vs Blocks
+                                                </a>
+                                                <div class="media-author">
+                                                    <a href="#" title="Super User">Harishankar P.S</a>
+                                                </div>
+                                                <div class="media-date-created">
+                                                    23 August 2016	
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tag-widget   widget-margin">
+								
+                                <h2 class="widget-title">Articles</h2>
+                                <div class="tag-list">
+                                    <a href="#" title="2 items tagged with Attorney">Ruby</a>
+                                    <a href="#" title="1 items tagged with Business">Rails</a>
+                                    <a href="#" title="1 items tagged with Claim">PostgreSQL</a>
+                                    <a href="#" title="1 items tagged with Criminal">Java Script</a>
+                                    <a href="#" title="1 items tagged with Justice">Ajax</a>
+                                    <a href="#" title="1 items tagged with Land">Heroku</a>
+                                    <a href="#" title="1 items tagged with Law">Html</a>
+                                    <a href="#" title="1 items tagged with Legal assitance">Sass</a>
+                                    <a href="#" title="1 items tagged with Victim">RED PANTHERS</a>
+                                </div>
+                            </div>
+                        </div>
+       
+        </div>
+    </div>
+</div>

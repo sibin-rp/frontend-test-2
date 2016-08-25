@@ -10,10 +10,23 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+
 //= require jquery
 //= require jquery_ujs
-//= require foundation
-//= require turbolinks
-//= require_tree .
+//= require jquery.mixitup
+//= require jquery.nivo.slider
+//= require jquery.nivo.slider.pack
+//= require jquery.waypoints.min
+//= require jquery.counterup.min
+//= require wow
+//= require mixitup
+//= require prism
+//= require service
+//= require map
+//= require chart
 
-$(function(){ $(document).foundation(); });
+
+//= require team
+
+//= require home
+

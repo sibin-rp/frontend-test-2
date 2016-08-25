@@ -1,0 +1,66 @@
+h1{
+font-size: 70px;
+}
+
+.team-area , .contact-area{
+  background: #f8f8f8 none repeat scroll 0 0;
+}
+.team-members {
+  background: #ffffff none repeat scroll 0 0;
+  border: 1px solid #f8f8f8;
+  padding: 5px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.member-content .member-name a {
+  color: #404244;
+  font-size: 20px;
+  font-weight: 400;
+}
+.member-content .position-title {
+  text-transform: capitalize;
+}
+.member-content .practice {
+  color: #f96d55;
+  margin: 20px 0 5px;
+  text-transform: capitalize;
+}
+.member-content .member-description {
+  padding: 0 15px;
+}
+.team-members .member-widget {
+  margin: 15px 0;
+  text-align: center;
+}
+.team-members .member-widget ul {
+  margin: 0;
+  padding: 0;
+}
+.team-members .member-widget ul li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0 10px;
+}
+.team-members .member-widget ul li a {
+  color: #65686b;
+  text-decoration: none;
+}
+
+.member-name{
+
+ a:hover {background-color: #ff8566}
+}
+
+
+.artical-list{
+font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.section-title{
+    margin-bottom: 50px;
+}
+.member-widget{
+ a:hover {background-color: #ff8566}
+
+}

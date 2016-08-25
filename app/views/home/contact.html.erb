@@ -1,2 +1,135 @@
-<h1>Home#contact</h1>
-<p>Find me in app/views/home/contact.html.erb</p>
+<!-- Memu Area end -->
+<!-- Nav Helper start -->
+<div class="nav-helper-area" style="background: transparent url('img/nav-helper.png') repeat scroll 0 0">
+	<div class="container">
+		<ol class="breadcrumb">
+			<li class="active">
+				</br>You are here: </li>
+			<li><a href="/" style="color:#ff8566">Home</a></li>
+			<li> <span>Contact</span></li>
+		</ol>
+	</div>
+</div>
+<!-- Nav Helper end -->
+
+
+<!-- Google Map start
+		<div id="map" style="width:100%;height:400px;"></div>-->
+
+
+
+
+
+<div class="map-responsive">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.06647506085!2d76.32035094998027!3d10.011367992808214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080cfc6e54aa05%3A0xad82389814ee4d11!2sRed+Panthers!5e0!3m2!1sen!2sin!4v1471806674427"
+		width="1290" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+<div class="image">
+		<img src="<%= image_path 'marker.png'%>" draggable="false" style="position: absolute; left: 625px; bottom: 375px; -webkit-user-select: none; width: 32px; height: 32px; border: 0px; padding: 0px; margin: 0px; max-width: none; opacity: 1;">
+</div>
+</div>
+
+
+
+<div class="contact-page section-padding2">
+	<div class="container">
+		<div class="row">
+
+								<div class="  col-md-8">
+<div class="row text-center">
+			<h2 id="h"  style="color:#ff8566">We'd love to hear from you</h2><br>
+Have a question or existing new idea?   <font color="#ff8566">Let's talk</font>
+		</div>
+
+
+				<h2 id="h">Contact Form</h2>
+				<p>
+					</br>Send an Email. All fields with an asterisk (*) are required.</p>
+				<hr>
+				<form action="mail.php" method="POST">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="form-group">
+								<label class="group-name"></br>Name <span class="star" style="color:yellow">*</br></span></label></br>
+								<input name="name" id="name" type="text">
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+								<label class="group-email"></br>Email <span class="star"  style="color:yellow">*</span></label></br>
+								<input name="email" id="email" type="email">
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+								<label class="group-url"></br>Subject <span class="star" style="color:yellow">*</span></label>
+								<input name="subject" id="subject" type="text">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="form-group">
+								<label class="form-comment">Message <span class="star"  style="color:yellow">*</span></label></br>
+								<textarea name="message" id="message" cols="30" rows="10"></textarea>
+							</div>
+						</div>
+					</div>
+
+					<!--<div class="form-group">
+									<label>Send Copy to Yourself</label>
+									<input type="checkbox" />
+								</div>-->
+					<input type="submit" value="Send Email" class="button"></button>
+				</form>
+			</div>
+			<div class="col-xs-12 col-sm-4  col-md-4">
+				<div class="blog-widget">
+					<div class="categorie-widget widget-margin">
+						<h2 class="widget-title" id="h">Contact Address</h2>
+						<hr>
+						<div class="contact-address-widget">
+							<p><strong id="s">Head Office</strong></p>
+							<p>
+								</br>Wyoming, USA
+
+								<br>412 N Main St Ste100
+
+								<br>Buffalo, WY, USA, 82834
+
+
+
+								<br>Telephone: +1 1234-567-89000
+								<br>Email: <a href="mailto:info@redpanthers.co"  style="color:#ff8566">info@redpanthers.co </a>
+								<br>Website: <a href="#"  style="color:#ff8566">https://redpanthers.co/ </a>
+							</p>
+							<p><strong id="s"></br></br>Local Office</strong></p>
+							<p>
+							</br>Kochi, India
+
+								<br>Vijaya Complex
+
+								<br>Chembumukku, Kakkanad.
+
+								<br>Kochi, Kerala, India - 682030
+
+								<br>Telephone: +1 1234-567-89000
+
+								<br>Email: <a href="mailto:info@redpanthers.co "  style="color:#ff8566">info@redpanthers.co </a>
+								<br>Website: <a href="#"  style="color:#ff8566">https://redpanthers.co/ </a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+
+
+
+	</div>
+
+
+
+</div>

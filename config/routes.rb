@@ -1,29 +1,83 @@
 Rails.application.routes.draw do
 
-  get 'dashboard/index'
 
-  get 'dashboard/documentation'
 
   devise_for :users
-  resources :teams
-  resources :posts
+
+
+  scope '/dashboard' do
+    get 'index', to:'dashboard#index'
+    get 'documentation', to:'dashboard#documentation'
+    resources :teams
+    resources :posts
+  end
+
   root 'home#index'
 
-  get 'home/index'
 
-  get 'home/about'
+  get 'home/about', to:'home#about'
 
-  get 'home/contact'
+  get 'home/contact', to:'home#contact'
 
-  get 'home/service'
+  get 'home/price', to:'home#price'
 
-  get 'home/blog'
+  get 'home/index', to:'home#index'
 
-  get 'home/blog/:id/show', to:'home#blog_index'
+  get '/index', to: 'home#index'
 
-  get 'home/teams'
 
-  get 'home/team/:id/show', to:'home#team_index'
+
+
+
+
+
+
+
+
+  get 'service', to:'home#service'
+
+  get 'practicestyle1', to:'home#practicestyle1'
+
+  get 'practicestyle2', to:'home#practicestyle2'
+
+  get 'singlepractice', to:'home#singlepractice'
+
+
+
+
+
+  get '/blog', to:'home#blog'
+  get 'home/blog', to:'home#blog'
+
+
+
+
+
+  get '/tag-page', to:'home#tag-page'
+  get 'home/tag-page', to:'home#tag-page'
+  get '/single-item', to:'home#single-item'
+  get 'home/single-item', to:'home#single-item'
+
+  get '/teams', to:'home#teams'
+  get 'home/teams', to:'home#teams'
+
+
+
+  get 'home/team_show'
+
+
+  get 'home/team_show1'
+
+
+  get 'home/team_show2'
+
+
+  get 'home/team_show3'
+
+
+  get 'home/faq'
+
+
 
   get 'home/get_ajax'
 
