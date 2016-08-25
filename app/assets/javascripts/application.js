@@ -16,6 +16,7 @@
 //= require jquery.mixitup
 //= require jquery.nivo.slider
 //= require jquery.nivo.slider.pack
+//= require counterUp
 
 //= require home
 //= require service
