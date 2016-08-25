@@ -20,6 +20,7 @@
 //= require jquery.counterup.min
 //= require wow
 //= require mixitup
+//= require prism
 //= require service
 //= require map
 //= require chart
