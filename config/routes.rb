@@ -14,26 +14,10 @@ Rails.application.routes.draw do
 
   root 'home#index'
 
-
+  get 'index', to:'home#index'
   get 'about', to:'home#about'
-
-  get 'home/contact', to:'home#contact'
-
-  get 'home/price', to:'home#price'
-
-  get 'home/index', to:'home#index'
-
-  get '/index', to: 'home#index'
-
-
-
-
-
-
-
-
-
-
+  get 'contact', to:'home#contact'
+  get 'price', to:'home#price'
   get 'service', to:'home#service'
 
   get 'practicestyle1', to:'home#practicestyle1'
@@ -46,8 +30,8 @@ Rails.application.routes.draw do
 
 
 
-  get '/blog', to:'home#blog'
-  get 'home/blog', to:'home#blog'
+  get 'blog', to:'home#blog'
+  get 'blog', to:'home#blog'
 
 
 
