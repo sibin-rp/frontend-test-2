@@ -20,3 +20,4 @@
 //= require map
 //= require chart
 //= require wow
+//= require team
