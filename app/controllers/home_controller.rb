@@ -45,6 +45,25 @@ class HomeController < ApplicationController
 
   end
 
+  def team_show1
+
+  end
+
+
+def team_show2
+
+  end
+
+def team_show3
+
+  end
+
+def faq
+
+  end
+
+
+
   # To Test GET,POST,PUT/PATCH and DELETE
   def get_ajax
     render json:{

@@ -24,4 +24,9 @@
 //= require service
 //= require map
 //= require chart
+
+
+//= require team
+
 //= require home
+
