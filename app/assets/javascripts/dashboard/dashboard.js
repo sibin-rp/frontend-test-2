@@ -13,7 +13,13 @@
 //= require jquery
 //= require jquery_ujs
 //= require foundation
-//= require turbolinks
 
 
-$(function(){ $(document).foundation(); });
+//= require morris
+//= require morris-demo
+
+//= require_self 
+
+$(document).ready(function() {
+    $(function() { $(document).foundation(); });
+})

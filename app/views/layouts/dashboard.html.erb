@@ -4,11 +4,13 @@
     <title>FrontendTest2</title>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'dashboard/dashboard.css', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'dashboard/dashboard.js', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'dashboard/dashboard.css', media: 'all' %>
+    
   </head>
 
-  <body>
+  <body class="fadeIn animated">
+    <%= render 'partials/dashhead' %>
     <%= yield %>
   </body>
+  <%= javascript_include_tag 'dashboard/dashboard.js' %>
 </html>

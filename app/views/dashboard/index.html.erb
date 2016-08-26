@@ -1,28 +1,195 @@
-<div class="row">
-<h1>Dashboard#index</h1>
-<p>Find me in app/views/dashboard/index.html.erb</p>
-
-<form>
-  <div class="row">
-    <div class="medium-6 columns">
-      <label>Input Label
-        <input type="text" placeholder=".medium-6.columns">
-      </label>
+<div class="container">
+    <div class="content-body">
+        <div id="intro-dashboard">
+            <div class="row">
+                <div class="large-3 columns">
+                    <div class="stats">
+                        <div class="stats-title">
+                            <span>Monthly</span> <span class="label radius alert right">Delivery Cost</span>
+                        </div>
+                        <div class="stats-body">
+                            <span> 100,000</span> <i class="fi-arrow-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="large-3 columns">
+                    <div class="stats">
+                        <div class="stats-title">
+                            <span>Profit</span> <span class="label radius success right">Sales</span>
+                        </div>
+                        <div class="stats-body">
+                            <span> 3,248,000 </span><i class="fi-arrow-up"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="large-3 columns">
+                    <div class="stats">
+                        <div class="stats-title">
+                            <span>Stock Count</span> <span class="label radius default right">Items In stock</span>
+                        </div>
+                        <div class="stats-body">
+                            <span>150,000</span> <i class="fi-arrow-up"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="large-3 columns">
+                    <div class="stats">
+                        <div class="stats-title">
+                            <span>Montly</span> <span class="label radius warning right">Site Visit</span>
+                        </div>
+                        <div class="stats-body">
+                            <span> 249,000</span> <i class="fi-arrow-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="dashboard-body">
+            <div class="row">
+                <div class="small-12 medium-6 large-8 columns">
+                    <div class="custom-panel-heading">
+                        <h5 class="white">
+                            Site Visits</h5>
+                    </div>
+                    <div class="custom-panel-details">
+                        <div id="morris-area-chart">
+                        </div>
+                    </div>
+                </div>
+                <div class="small-12 medium-6 large-4 columns">
+                    <div class="custom-panel-heading">
+                        <h5 class="white">
+                            Notification</h5>
+                    </div>
+                    <div class="custom-panel-details">
+                        <div class="notification">
+                            <div class="notification-details">
+                                <i class="fi-alert"></i><span>Alert Sales & Marketing</span> <span class="right green">
+                                    Just Now</span>
+                            </div>
+                            <div class="notification-details">
+                                <i class="fi-like"></i><span>2 New Users</span> <span class="right green">Just Now</span>
+                            </div>
+                            <div class="notification-details">
+                                <i class="fi-star"></i><span>Alert Administration</span> <span class="right green">3h</span>
+                            </div>
+                            <div class="notification-details">
+                                <i class="fi-alert"></i><span>Blue pumps stock getting low</span> <span class="right green">
+                                    8h</span>
+                            </div>
+                            <div class="notification-details">
+                                <i class="fi-alert"></i><span>Alert production staff</span> <span class="right green">
+                                    10h</span>
+                            </div>
+                            <div class="notification-details">
+                                <i class="fi-like"></i><span>New stocking coming in</span> <span class="right green">
+                                    2h</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="large-6 columns">
+                    <div class="custom-panel-heading">
+                        <h5 class="white">
+                            Messages
+                        </h5>
+                    </div>
+                    <div class="custom-panel-details">
+                        <div class="row">
+                            <div class="message-dashboard">
+                                <div class="small-2 columns">
+                                    <img src="<%= image_path'johnnydepp.jpg'%>" alt="profile" />
+                                </div>
+                                <div class="small-10 columns">
+                                    <div class="message-desc">
+                                        <b>John</b> said Are you ready to order new shoes? <span class="right green">5h</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="message-dashboard">
+                                <div class="small-2 columns">
+                                    <img src="<%= image_path'johnnydepp.jpg'%>" alt="profile" />
+                                </div>
+                                <div class="small-10 columns">
+                                    <div class="message-desc">
+                                        <b>Debby</b> said I would like to order this phone there seems to be a problem<span class="right green">5h</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="message-dashboard">
+                                <div class="small-2 columns">
+                                    <img src="<%= image_path'johnnydepp.jpg'%>" alt="profile" />
+                                </div>
+                                <div class="small-10 columns">
+                                    <div class="message-desc">
+                                        <b>Chin</b> said More raw material coming your way <span class="right green">5h</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="message-dashboard">
+                                <div class="small-2 columns">
+                                    <img src="<%= image_path'johnnydepp.jpg'%>" alt="profile" />
+                                </div>
+                                <div class="small-10 columns">
+                                    <div class="message-desc">
+                                        <b>Beth</b> said Marketing Campaign is ready <span class="right green">5h</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="large-6 columns">
+                    <div class="custom-panel-heading">
+                        <h5 class="white">
+                            Projects
+                        </h5>
+                    </div>
+                    <div class="custom-panel-details">
+                        <div class="project-snippet">
+                            <div class="project-header">
+                                <i class="fi-folder"></i>Project Name
+                            </div>
+                            <div class="project-line">
+                                <span>6:00 pm</span>
+                                <div class="project-desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-snippet">
+                            <div class="project-header">
+                                <i class="fi-folder"></i>Project Name
+                            </div>
+                            <div class="project-line">
+                                <span>6:00 pm</span>
+                                <div class="project-desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-snippet">
+                            <div class="project-header">
+                                <i class="fi-folder"></i>Project Name
+                            </div>
+                            <div class="project-line">
+                                <span>6:00 pm</span>
+                                <div class="project-desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="medium-6 columns">
-      <label>Input Label
-        <input type="text" placeholder=".medium-6.columns">
-      </label>
-    </div>
-  </div>
-  <div class="row">
-    <div class="small-12 columns">
-      <button class="button ">
-      <span class="fa fa-send"></span>
-      Send
-      </button>
-    </div>
-  </div>
-</form>
-
 </div>
