@@ -14,6 +14,10 @@ Rails.application.routes.draw do
 
   root 'home#index'
 
+  get 'index', to:'home#index'
+  get 'about', to:'home#about'
+  get 'contact', to:'home#contact'
+  get 'price', to:'home#price'
 
   get 'home/about', to:'home#about'
 
@@ -24,13 +28,6 @@ Rails.application.routes.draw do
   get 'home/index', to:'home#index'
 
   get '/index', to: 'home#index'
-
-
-
-
-
-
-
 
 
 
@@ -46,8 +43,8 @@ Rails.application.routes.draw do
 
 
 
-  get '/blog', to:'home#blog'
-  get 'home/blog', to:'home#blog'
+  get 'blog', to:'home#blog'
+  get 'blog', to:'home#blog'
 
 
 
@@ -88,4 +85,6 @@ Rails.application.routes.draw do
   delete 'home/del_ajax'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get 'dashboard/teamdetails'
+  
 end

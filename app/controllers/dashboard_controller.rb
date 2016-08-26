@@ -7,4 +7,8 @@ class DashboardController < ApplicationController
 
   def documentation
   end
+
+  def teamdetails
+  end
+
 end
