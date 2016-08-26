@@ -18,6 +18,19 @@ Rails.application.routes.draw do
   get 'about', to:'home#about'
   get 'contact', to:'home#contact'
   get 'price', to:'home#price'
+
+  get 'home/about', to:'home#about'
+
+  get 'home/contact', to:'home#contact'
+
+  get 'home/price', to:'home#price'
+
+  get 'home/index', to:'home#index'
+
+  get '/index', to: 'home#index'
+
+
+
   get 'service', to:'home#service'
 
   get 'practicestyle1', to:'home#practicestyle1'
@@ -72,4 +85,6 @@ Rails.application.routes.draw do
   delete 'home/del_ajax'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get 'dashboard/teamdetails'
+  
 end
