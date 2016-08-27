@@ -1,19 +1,7 @@
 // Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-#id1 {
-    text-align: center;
-}
 
-#i1 {
-    padding-left: 70px;
-    text-align: center;
-}
-
-.prac {
-    color: #f96d55;
-    margin: 20px 0 5px;
-}
 
 .slider-wrapper {
     width: 100%;
@@ -26,4 +14,58 @@
 
 .feature-header {
     text-align: center;
+}
+
+.fa-ul{
+
+    li:hover{color: #ff8586;}
+}
+
+
+.arrow_box {
+	position: absolute;
+	background: #88b7d5;
+	border: 4px solid #c2e1f5;
+	align :left;
+
+}
+.arrow_box:after, .arrow_box:before {
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 10px;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-right-color: #88b7d5;
+
+}
+.arrow_box:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-right-color: #c2e1f5;
+	border-width: 36px;
+	margin-top: -36px;
+	
+}
+
+
+
+
+.fadeIn {
+  -webkit-animation: fadeIn 7s; /* Safari 4+ */
+  -moz-animation:     fadeIn 7s; /* Fx 5+ */
+  -o-animation:       fadeIn 7s; /* Opera 12+ */
+  animation:          fadeIn 7s; /* IE 10+, Fx 29+ */
+}
+
+.pulse {
+  -webkit-animation: pulse 7s; /* Safari 4+ */
+  -moz-animation:     pulse 7s; /* Fx 5+ */
+  -o-animation:       pulse 7s; /* Opera 12+ */
+  animation:          pulse 7s; /* IE 10+, Fx 29+ */
 }
