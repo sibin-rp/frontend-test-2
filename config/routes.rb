@@ -15,13 +15,16 @@ Rails.application.routes.draw do
   root 'home#index'
 
 
-  get 'about', to:'home#about'
+  get 'home/about', to:'home#about'
 
   get 'home/contact', to:'home#contact'
 
   get 'home/price', to:'home#price'
 
   get 'home/index', to:'home#index'
+
+
+  
 
   get '/index', to: 'home#index'
 

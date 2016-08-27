@@ -26,3 +26,8 @@
 //= require chart
 //= require fade
 //= require home
+//= require team
+
+
+
+
