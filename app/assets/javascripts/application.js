@@ -24,4 +24,5 @@
 //= require service
 //= require map
 //= require chart
+//= require fade
 //= require home
